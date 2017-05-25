@@ -1,0 +1,1 @@
+23-May-2017 18:00:00.740 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Using artifactory.home at '/home/vagrant/artifactory-oss-5.3.0' resolved from: System property

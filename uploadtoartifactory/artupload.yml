@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - shell: sudo curl -uadmin:AP4x1GK4cKMYrEa -T /home/vagrant/CTCO/ravi_sravanam/target/LoginWebApp.war "http://ansible-artifactory:8081/artifactory/ctc/LoginWebApp.war"
+

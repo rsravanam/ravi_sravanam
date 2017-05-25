@@ -1,0 +1,9 @@
+---
+- name: Stop Tomcat
+  service: name=tomcat state=stopped enabled=yes
+- name: Remove Old file
+  command: chdir=/usr/share/tomcat/webapps sudo rm -rf /usr/share/tomcat/webapps/LoginWebApp.war
+- name: Deploy from Artifactory to Nodes
+  command: chdir=/usr/share/tomcat/webapps sudo curl -u{{ admin_username }}:{{ admin_password }} -O "http://10.1.1.35:8081/artifactory/ctc/LoginWebApp.war"
+- name: Start tomcat
+  service: name=tomcat state=started enabled=yes

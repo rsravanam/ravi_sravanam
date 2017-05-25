@@ -1,0 +1,8 @@
+---
+- hosts: servers
+  become: sudo
+  tasks:
+    - service: name=tomcat state=stopped enabled=yes
+    - shell: chdir=/usr/share/tomcat/webapps sudo rm -rf /usr/share/tomcat/webapps/LoginWebApp.war
+    - shell: chdir=/usr/share/tomcat/webapps sudo curl -uadmin:AP4x1GK4cKMYrEa -O "http://10.1.1.35:8081/artifactory/ctc/LoginWebApp.war"
+    - service: name=tomcat state=started enabled=yes
