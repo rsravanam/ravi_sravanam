@@ -1,0 +1,4 @@
+[submodule "AnsiblePlays"]
+	path = AnsiblePlays
+	url = https://github.com/rsravanam/ravi_sravanam.git
+	branch = ansible
