@@ -36,7 +36,7 @@ RUN cd /opt/mesos-${MESOS_VERSION} && ./bootstrap
 RUN cd /opt/mesos-${MESOS_VERSION} && mkdir build && cd build && ../configure && make
 
 #12 Run test suite.
-RUN cd /opt/mesos-${MESOS_VERSION}/build && make check
+#RUN cd /opt/mesos-${MESOS_VERSION}/build && make check
 
 #13 Install (Optional, but checking!!!).
 RUN cd /opt/mesos-${MESOS_VERSION}/build && make install	
