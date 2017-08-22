@@ -6,7 +6,7 @@ ARG  IMAGE_VERSION=14.04
 FROM ${IMAGE_REPO}:${IMAGE_NAME}-${IMAGE_VERSION}
 
 #2 Env vars
-ENV MESOS_VERSION=1.3.1
+ENV MESOS_VERSION 1.3.1
 
 #3 Update the packages.
 RUN apt-get update
@@ -24,7 +24,7 @@ RUN apt-get install -y autoconf libtool
 RUN apt-get -y install build-essential python-dev python-six python-virtualenv libcurl4-nss-dev libsasl2-dev libsasl2-modules maven libapr1-dev libsvn-dev
 
 #8 Get Mesos Master
-RUN wget -O /opt/mesos-${MESOS_VERSION}.tar.gz http://www.apache.org/dist/mesos/${MESOS_VERSION}/mesos-${MESOS_VERSION}.tar.gz
+RUN wget -O /opt/mesos-${MESOS_VERSION}.tar.gz http://archive.apache.org/dist/mesos/${MESOS_VERSION}/mesos-${MESOS_VERSION}.tar.gz
 
 #9 Extract Mesos Master
 RUN cd /opt/ && tar -zxf mesos-${MESOS_VERSION}.tar.gz
@@ -58,4 +58,3 @@ RUN cd /opt/mesos-${MESOS_VERSION}/build && ./src/examples/java/test-framework 1
 
 #19 Run Python framework (exits after successfully running some tasks).
 RUN cd /opt/mesos-${MESOS_VERSION}/build && ./src/examples/python/test-framework 127.0.0.1:5050
-
