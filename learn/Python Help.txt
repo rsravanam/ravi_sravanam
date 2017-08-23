@@ -1,0 +1,22 @@
+1. C:\Python27\Tools\Scripts> python setup.py install
+=======================================================
+2. C:\Python27\Tools\Scripts> python setup.py develop
+=======================================================
+C:/Python27/Scripts> pip install python-jenkins
+=======================================================
+For Jobs Management
+
+pip install PyYAML python-jenkins
+
+https://pypi.python.org/pypi/jenkins-job-builder/
+-----------------------------------------------------------
+
+Link: http://arunrocks.com/guide-to-install-python-or-pip-on-windows/
+
+In Power Shell
+
+(new-object System.Net.WebClient).DownloadFile('https://bootstrap.pypa.io/ez_setup.py','D:\Python\Env\distribute_setup.py')
+(new-object System.Net.WebClient).DownloadFile('https://raw.github.com/pypa/pip/master/contrib/get-pip.py','D:\Python\Env\get-pip.py')
+
+
+ Could not find a version that satisfies the requirement pip (from versions: ) No matching distribution found for pip
