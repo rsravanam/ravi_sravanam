@@ -1,0 +1,29 @@
+--- # Multiple Itmes
+- hosts: linux
+  become: yes
+  tasks:
+  - name: perform command
+    shell: echo "Hello"
+ 
+  - name: copy files
+    copy: "src=~/test.txt dest=~/"
+
+  - name: copy files 2nd way
+    copy:
+      src: ~/test.txt
+      dest: ~/"
+
+  - name: Multiple Items - {{ item }}
+    file:
+           state: touch
+           path: /home/sravanam1242_cloud/{{ item }}
+    with_items:
+    - file_no_1
+    - file_no_2
+    - file_no_3
+  - name: Install Common Libraries from Ubuntu mirror
+    apt: state=present name={{ item }}
+    with_items:
+    - unzip
+    - wget
+    - tar

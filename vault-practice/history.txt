@@ -1,0 +1,28 @@
+    1  ls
+    2  ansible all -m ping
+    3  ansible-vault create encrypt.yml
+    4  vi encrypt.yml 
+    5  ansible-vault encrypt_string password123 --ask-vault-pass
+    6  vi encrypt.yml 
+    7  nano test.yml
+    8  ansible-playbook localhost test.yml --ask-vault-pass 
+    9  ansible-playbook local test.yml --ask-vault-pass 
+   10  ansible-playbook -i  localhost test.yml --ask-vault-pass 
+   11  nano test.yml
+   12  ansible-playbook -i  localhost test.yml --ask-vault-pass 
+   13  nano test.yml
+   14  ansible-playbook -i  localhost test.yml --ask-vault-pass 
+   15  nano test.yml
+   16  sudo vi test.yml
+   17  sudo vi vars.yml
+   18* sudo vi test.
+   19  ansible-playbook test.yml
+   20  ansible-vault encrypt_string X_my_secret_X --ask-vault-pass
+   21  sudo vi vars.yml
+   22  ansible-playbook test.yml --ask-vault-pass
+   23  ansible-playbook test.ym
+   24  ansible-playbook test.yml
+   25  sudo vi vpf.txt
+   26  ansible-playbook test.yml --vault-password-file vpf.txt 
+   27  ls
+   28  history > history.txt
