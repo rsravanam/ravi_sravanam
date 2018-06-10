@@ -1,0 +1,13 @@
+#This playbook deploys a simple standalone Tomcat 7 server.
+---
+
+#- hosts: "{{ my_hosts | default('tomcat-server') }}"
+- hosts: nginx
+  #remote_user: root
+  become: yes
+  become_method: sudo
+  #any_errors_fatal: true
+  roles:
+    - nginx
+    - { role: nginx, when: ansible_os_family == 'Debian', tags: ngx }
+    - { role: java, when: ansible_os_family == 'Redhat', tags: jv }

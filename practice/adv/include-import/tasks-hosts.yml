@@ -1,0 +1,9 @@
+---
+#- hosts: test
+#  become: yes
+
+#  tasks:
+- name: task 1
+  command: echo "task 1"
+- name: task 2
+  command: echo "task 2"
