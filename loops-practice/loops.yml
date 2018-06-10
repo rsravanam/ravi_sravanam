@@ -1,7 +1,14 @@
 --- # Multiple Itmes
 - hosts: linux
   become: yes
+  gather_facts: yes
+
   tasks:
+
+  - name: retrive fact
+    debug:
+      msg: "{{ ansible_all_ipv4_addresses}} , {{ ansible_all_ipv6_addresses }}"
+    register: out
   - name: perform command
     shell: echo "Hello"
  
