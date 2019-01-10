@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rsvp-customer3
+  labels:
+    app: rsvp-customer3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rsvp-customer3
+  template:
+    metadata:
+      labels:
+        app: rsvp-customer3
+    spec:
+      containers:
+      - name: rsvp-app
+        image: teamcloudyuga/rsvpapp
+        env:
+        - name: MONGODB_HOST
+          value: mongodb
+        - name: TEXT1
+          valueFrom:
+            configMapKeyRef:
+              name: customer3
+              key: TEXT1
+        - name: TEXT2
+          valueFrom:
+            configMapKeyRef:
+              name: customer3
+              key: TEXT2
+        - name: COMPANY
+          valueFrom:
+            configMapKeyRef:
+              name: customer3
+              key: COMPANY
+        ports:
+        - containerPort: 5000
+          name: web-port

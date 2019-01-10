@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: customer-3-web-ingress
+  namespace: default
+spec:
+  rules:
+  - host: three.example.com
+    http:
+      paths:
+      - backend:
+          serviceName: rsvp-customer3
+          servicePort: 80

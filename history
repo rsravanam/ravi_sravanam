@@ -1,0 +1,316 @@
+    1  c d~
+    2  cd --
+    3  ll
+    4  ll /home/kuber/
+    5  cp /home/kuber/minku.sh .
+    6  ls
+    7  ./minku.sh 
+    8  sudo nano /etc/sudoers
+    9  exit
+   10  cd --
+   11  docker image ls
+   12  sudo docker image ls
+   13  exit
+   14  cd --
+   15  sudo kubectl proxy
+   16  sudo kubectl proxy &2>1 /dev/null
+   17  sudo kubectl proxy &2>1 
+   18  sudo kubectl proxy 
+   19  sudo kubectl proxy &2>1 /dev/null
+   20  top
+   21  ps -elf | grep proxy
+   22  kill -9 20323
+   23  sudo kill -9 20323
+   24  sudo kill -9 20399
+   25  sudo kill -9 20419
+   26  sudo kill -9 20486
+   27  sudo kill -9 20488
+   28  ps -elf | grep proxy
+   29  sudo kubectl proxy &2>1 /dev/null
+   30  sudo vi /etc/hosts
+   31  sudo nano /etc/hosts
+   32  sudo systemctl daemon-reload 
+   33  sudo nano /etc/hosts
+   34  hostname -i
+   35  cat /etc/hosts
+   36  sudo nano /etc/hosts
+   37  history | grep docker
+   38  exit
+   39  cd --
+   40  kubectl get pods
+   41  sudo kubectl get pods
+   42  kubectl get pods
+   43  ll /home/minikube/.minikube
+   44  chown minikube:minikube /home/minikube/.minikube -R
+   45  sudo chown minikube:minikube /home/minikube/.minikube -R
+   46  ll /home/minikube/.minikube
+   47  kubectl get pods
+   48  kubectl get pvc
+   49  kubectl get config
+   50  kubectl get configmap
+   51  kubectl get secrets
+   52  kubectl get logs
+   53  kubectl enable ingress
+   54  uname -r
+   55  uname -l
+   56  uname -a
+   57  lsb_release 
+   58  history | grep lsb
+   59  arc
+   60  apt install arc -yqqq
+   61  sudo apt install arc -yqqq
+   62  arc
+   63  lsb_release -a
+   64  sudo nano /etc/hosts
+   65  sudo systemctl daemon-reload 
+   66  ll
+   67  cd k8s-practice/
+   68  ls
+   69  cd edx/
+   70  ls
+   71  cat rsvp-web-ingress.yml 
+   72  minikube enable ingress
+   73  minikube ingress enable
+   74  minikube --help
+   75  minikube addons ingress
+   76  minikube addons enable ingress
+   77  minikube status
+   78  sudo minikube status
+   79  sudo minikube addons enable ingress
+   80  sudo minikube addons --list
+   81  sudo minikube addons 
+   82  sudo minikube addons list
+   83  ll
+   84  cat rsvp-web-service.yml
+   85  cat rsvp-web-customer1.yml
+   86  cat
+   87  cat customer-1-configmap-yaml
+   88  ll
+   89  rsvp-web-service.yml
+   90  sudo kubectl create -f rsvp-web-service.yml
+   91  sudo kubectl create -f rsvp-db.yml
+   92  sudo kubectl create -f rsvp-db-service.yml
+   93  sudo kubectl create -f rsvp-web.yml 
+   94  sudo kubectl get services
+   95  cat rsvp-web-ingress.yml
+   96  sudo kubectl create -f customer-1-configmap-yaml
+   97  sudo kubectl create -f rsvp-web-service-customer-1.ym
+   98  sudo kubectl create -f rsvp-web-customer1.yml
+   99  sudo kubectl create -f rsvp-web-ingress.yml
+  100  sudo nano /etc/hosts
+  101  sudo kubectl get pods
+  102  cd --
+  103  ll
+  104  rm -f minikube kubectl 
+  105  ll /usr/share
+  106  locate kubectl
+  107  sudo rm -rf  /usr/local/bin/kubectl 
+  108  sudo rm -rf  /usr/local/bin/minikube*
+  109  ll /usr/share
+  110  sudo rm -rf  /usr/local/bin/
+  111  ll /usr/local/bin
+  112  sudo mkdir /usr/local/bin
+  113  ll /usr/local/bin
+  114  ./minku.sh 
+  115  ll
+  116  sudo sh minku.sh 
+  117  ll
+  118  cat minku.sh 
+  119  m start
+  120  minikube start
+  121  minikube delete
+  122  sudo minikube delete
+  123  sudo minikube start
+  124  minikube status
+  125  sudo minikube status
+  126  sudo minikube dashboard
+  127  k proxy
+  128  kubectl proxy
+  129  sudo kubectl proxy
+  130  docker image ls
+  131  sudo docker image ls
+  132  sudo docker container ls
+  133  sudo docker container ls -a
+  134  sudo docker container ls -a --filetr=IMAGE
+  135  sudo docker container ls --help
+  136  sudo docker container prune
+  137  sudo docker container ls -q
+  138  sudo docker container ls -a -q
+  139  sudo docker container ls -aq
+  140  sudo docker image ls -aq
+  141  sudo docker image ls 
+  142  sudo docker rmi 5f09defb353a cf24c27817bf ee700f3b97d6 be39725149f4 e81eb098537d 97bc1352afde a78e257617d1
+  143  sudo docker image ls 
+  144  mv /home/kuber/k8* ./
+  145  sudo mv /home/kuber/k8* ./
+  146  ll
+  147  mvn --version
+  148  ll
+  149  free -d
+  150  free -g
+  151  top
+  152  ps -elf | grep minikube
+  153  top | grep minikube
+  154  sudo su
+  155  docker container
+  156  docker container ls
+  157  sudo docker container ls
+  158  sudo docker image ls
+  159  docker container ls -a
+  160  sudo docker container ls -a
+  161  minikuber status
+  162  minikube status
+  163  sudo minikube status
+  164  sudo kubectl get pods
+  165  sudo kubectl get pv
+  166  sudo kubectl get pvc
+  167  sudo docker container ls
+  168  minikube ssh
+  169  ssh minikube
+  170  sudo minikube ssh
+  171  sudo minikube stop
+  172  sudo reboot
+  173  cd --
+  174  sudo minikube user
+  175  sudo minikube status
+  176  sudo ssh minikube
+  177  sudo minikube ssh
+  178  exit
+  179  sudo minikube status
+  180  minikube
+  181  sudo minikube status
+  182  sudo minikube start
+  183  sudo kubectl proxy &2>1 /dev/null
+  184  sudo kill -9 10175
+  185  sudo kubectl proxy 
+  186  ps -elf | grep kube
+  187  sudo kill -9 10177
+  188  sudo kubectl proxy 
+  189  sudo minikube dashboard
+  190  sudo kubectl proxy 
+  191  sudo kubectl proxy &2>1 /dev/null
+  192  exit
+  193  dockeer image ls
+  194  sud odockeer image ls
+  195  sudo docker image ls
+  196  sudo docker container ls
+  197  sudo docker container ls -a
+  198  sudo docker container promtheus start
+  199  sudo docker container start prometheus
+  200  arch
+  201  hostname
+  202  os
+  203  echo $ os
+  204  echo $os
+  205  arch -a
+  206  lscpu
+  207  sudo minikube status
+  208  sudo kubectl proxy
+  209  sudo minikube dashboard
+  210  ll
+  211  cd --
+  212  ll
+  213  cd .minikube/
+  214  ll
+  215  sudo chown minikube:minikube *.pem -R
+  216  ll
+  217  ll machines/
+  218  ll machines/minikube/
+  219  sudo chown minikube:minikube machines/minikube/config.json 
+  220  ll
+  221  ll machines/minikube/
+  222  minikube status
+  223  sudo minikube status
+  224  sudo su
+  225  cd ../
+  226  ll
+  227  cd .kube/
+  228  ls
+  229  ll
+  230  sudo chown minikube:minikube -R ./
+  231  ll
+  232  kubectl get ns
+  233  kubectl get pods
+  234  kubectl get rs
+  235  kubectl get pv
+  236  kubectl get pvc
+  237  kubectl get svc
+  238  kubectl get deploy
+  239  ll
+  240  cd ..
+  241  ll
+  242  cd k8s-practice/
+  243  ls
+  244  cd edx/
+  245  l
+  246  ll
+  247  mkdir cust3
+  248  sudo mkdir cust3
+  249  ll
+  250  sudo chown minikube:minikube -R ./
+  251  ll
+  252  cp customer-1-configmap-yaml cust3/customer-2-configmap-yaml 
+  253  cp rsvp-web-customer1.yml cust3/rsvp-web-customer-2-deploy.yml 
+  254  cp rsvp-web-ingress.yml cust3/rsvp-web-ingress-cust3.yml 
+  255  cp rsvp-web-service-customer-1.yml cust3/rsvp-web-service-customer-2.yml 
+  256  cd cust3/
+  257  ls
+  258  ll
+  259  nano customer-2-configmap-yaml 
+  260  nano rsvp-web-customer-2-deploy.yml 
+  261  nano rsvp-web-ingress-cust3.yml 
+  262  nano rsvp-web-customer-2-deploy.yml 
+  263  mv rsvp-web-customer-2-deploy.yml rsvp-web-customer-3-deploy.yml
+  264  mv customer-2-configmap-yaml customer-3-configmap-yaml
+  265  lll
+  266  ;;
+  267  ll
+  268  mv rsvp-web-service-customer-2.yml rsvp-web-service-customer-3.yml
+  269  ll
+  270  nano customer-3-configmap-yaml
+  271  nano rsvp-web-customer-3-deploy.yml
+  272  nano rsvp-web-ingress-cust3.yml
+  273  nano rsvp-web-service-customer-3.yml
+  274  cat rsvp-web-ingress-cust3.yml
+  275  cd ..
+  276  kubectl create -f cust3
+  277  nano cust3/rsvp-web-ingress-cust3.yml
+  278  kubectl delete cust3
+  279  kubectl delete -f cust3
+  280  kubectl create -f cust3
+  281  sudo nano /etc/sudoers
+  282  sudo nano /etc/hosts
+  283  sudo systemctl daemon-reload 
+  284  kubectl get deploy
+  285  kubectl get svc
+  286  kubectl get ingress
+  287  k get cm
+  288  kubectl get cm
+  289  ll
+  290  cd cust3/
+  291  ll
+  292  kubetl create -f customer-3-configmap-yaml 
+  293  kubectl create -f customer-3-configmap-yaml 
+  294  sudo nano /etc/hosts
+  295  kubectl get cm
+  296  kubectl get igress
+  297  kubectl get ingress
+  298  docker container ls
+  299  sudo docker container ls
+  300  cd --
+  301  sudo docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+  302  docker image ls
+  303  sudo docker image ls
+  304  sudo docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+  305  sudo docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+  306  ls
+  307  ping 54.187.199.45
+  308  su ravi.sravanam
+  309  vagrant global-status
+  310  ll
+  311  su ravi.sravanam ravi.sravanam
+  312  su ravi.sravanam 
+  313  exit
+  314  history
+  315  history >. history
+  316  history > history
