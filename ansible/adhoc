@@ -1,0 +1,1 @@
+ansible -i hosts $1 -m ping -v

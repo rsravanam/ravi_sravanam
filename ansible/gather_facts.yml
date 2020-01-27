@@ -1,0 +1,46 @@
+---
+- hosts: localhost
+  gather_facts: no
+  serial: 1
+  
+  tasks:
+
+    #- debug: var=ansible_all_ipv4_addresses
+
+    #- debug: var=ansible_default_ipv4.address
+
+    - name: gather facts
+      setup:
+      register: su
+
+    - name: print gather facts
+      debug: msg='{{su}}'
+  
+    #- debug: msg='{{ ansible_default_ipv4.address }} {{ ansible_default_ipv4.interface }} {{ ansible_hostname }}'
+    #- debug: msg='{{ ansible_interfaces }}'
+    
+    - name: print all ips
+      shell: |
+        echo "ip is {{ item }}"
+      with_items: "{{su.ansible_facts.ansible_all_ipv4_addresses}}"
+
+    - name: print all interfaces
+      shell: |
+        echo "ip is {{ item }}"
+      with_items: "{{su.ansible_facts.ansible_interfaces}}"
+
+    - name: OS | "{{ env }}" | "{{ ansible_os_family }}" | get keys
+      shell: |
+        aws configure get aws_access_key_id
+        aws configure get aws_secret_access_key
+      register: creds
+      #no_log: true
+      delegate_to: localhost
+
+    - name: OS | "{{ env }}" | "{{ ansible_os_family }}" | get keys sub task
+      debug: 
+        msg: '{{ creds }}'
+      #no_log: true
+      register: keys
+
+    - shell: echo "{{ keys.msg.stdout_lines[0] }}:{{ keys.msg.stdout_lines[1] }}"

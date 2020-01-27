@@ -1,0 +1,13 @@
+- hosts: localhost
+  vars:
+    hello: [Asia, Americas, Artic, Antartic ,Oceania,Europe,Africa]
+  tasks:
+  - name: Ansible array variables example
+    debug: 
+      msg: "{{ item }}"
+    with_items:
+      - "{{ hello }}"
+  - name: with shell
+    command: echo "Country is {{ hello }}"
+    with_items:
+      - "{{ hello }}"

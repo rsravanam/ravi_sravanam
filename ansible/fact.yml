@@ -1,0 +1,30 @@
+---
+- hosts: dev
+  gather_facts: false
+  become: yes
+  serial: 1
+  
+  tasks:
+
+    - ping:
+
+    #- debug: var=ansible_all_ipv4_addresses
+
+    #- debug: var=ansible_default_ipv4.address
+
+    #- name: gather facts
+    #  setup:
+    #  #register: su
+
+    #- name: print gather facts
+    #  debug: msg='{{su}}'
+    #  no_log: true
+  
+    #- debug: msg='{{ ansible_default_ipv4.address }} {{ ansible_default_ipv4.interface }} {{ ansible_hostname }}'
+    #- debug: msg='{{ ansible_interfaces }}'
+    
+    #- name: print all folders greater than 125 days
+    #  shell: |
+    #    #ls -l /opt/
+    #    #find /opt/ -mindepth 15 -type d -mtime +125  -exec ls -d */ {} \;
+    #    find ~/ -mindepth 15 -type d -mtime +15  -exec ls -d */ {} \;

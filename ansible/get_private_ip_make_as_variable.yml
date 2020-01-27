@@ -1,0 +1,60 @@
+---
+- hosts: dev
+  gather_facts: false
+  #serial: 1
+  
+  tasks:
+
+    #- debug: var=ansible_all_ipv4_addresses
+
+    #- debug: var=ansible_default_ipv4.address
+
+    - name: gather facts
+      setup:
+      #register: su
+
+    #- name: print gather facts
+    #  debug: msg='{{su}}'
+    #  no_log: true
+  
+    #- debug: msg='{{ ansible_default_ipv4.address }} {{ ansible_default_ipv4.interface }} {{ ansible_hostname }}'
+    #- debug: msg='{{ ansible_interfaces }}'
+    
+    - name: print all ips
+      shell: |
+        #echo "ip is {{ item }} {{ ansible_proc_cmdline.root }}"
+        ip="{{ item }}"
+        if echo "$ip" | { IFS=. read a b c d e;
+          test "$a" -eq 10 || test "$a" -eq 172|| test "$a" -eq 192 &&
+          test "$b" -ge 0 && test "$b" -le 255 &&
+          test "$c" -ge 0 && test "$c" -le 255 &&
+          test "$d" -ge 0 && test "$d" -le 255 &&
+          test -z "$e"; }; 
+        then 
+            echo $ip is valid private ip;
+            echo $ip > ~/privateip
+        else
+            echo $ip is public ip;    
+        fi
+
+      with_items: "{{ansible_all_ipv4_addresses}}"
+      #no_log: true
+
+    - name: cat ip
+      shell: cat ~/privateip
+      register: privip
+
+    - name: print ip
+      debug: msg='{{ inventory_hostname }} - {{ privip.stdout }}'
+
+    - set_fact:
+        private_ip: '{{ privip.stdout }}'
+        cacheable: no 
+        
+    - shell: |
+        echo '{{ private_ip }}'
+    
+    #- name: test uuid template
+    #  template:
+    #    src: ./private-interface.j2
+    #    dest: ~/private-interface.txt

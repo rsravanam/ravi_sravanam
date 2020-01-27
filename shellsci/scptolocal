@@ -1,0 +1,1 @@
+scp -i "~/.ssh/id_rsa" ravi@4.3.2.1:/home/ravi/* ./

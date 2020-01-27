@@ -1,0 +1,22 @@
+- hosts: dev
+  #become_user: ravi
+  #gather_facts: False
+  tasks:
+      
+      - setup:
+        register: se
+  
+      - debug: msg="{{ se }}"
+
+      - debug: var=ansible_date_time
+      - debug: var=ansible_all_ipv4_addresses
+      - debug: var=ansible_all_ipv6_addresses
+      - debug: var=ansible_default_ipv4
+
+      - debug: msg="the current date is {{ ansible_date_time.date }}-{{ ansible_date_time.hour }}-{{ ansible_date_time.minute }}-{{ ansible_date_time.second }}-{{ ansible_date_time.weekday }}"
+
+      #- debug: msg="{{ se.ansible_facts.ansible_all_ipv4_addresses }}"
+
+      #- debug: var=ansible_memory_mb
+
+      #- command: free -g

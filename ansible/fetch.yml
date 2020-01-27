@@ -1,0 +1,13 @@
+---
+- hosts: dev
+  gather_facts: false
+  become: yes
+  #serial: 1
+  
+  tasks:
+
+    - find: paths="/opt/folder" recurse=no patterns="test*"
+      register: files_to_copy
+
+    - fetch: src={{ item.path }} dest=/home/ravi/test/
+      with_items: "{{ files_to_copy.files }}"

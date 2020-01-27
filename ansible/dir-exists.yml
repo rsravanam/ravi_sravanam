@@ -1,0 +1,40 @@
+---
+- hosts: localhost #'{{ hosts }}'
+  connection: local
+  become: yes
+
+  tasks:
+
+  - name: OS | "{{ env }}" - "{{ tag }}" | "{{ ansible_os_family }}" | fstab entry test
+    shell: grep "^s3fs#" /location/test
+    register: test_fstab
+    ignore_errors: true
+
+  - name: Ansible check dir exists example.
+    stat:
+      path: /location
+    register: file_details
+    no_log: true
+
+  - debug: msg={{file_details}}
+    when: test_fstab.stdout == ""
+
+  - debug:
+      msg: "The file or directory exists"
+    when: file_details.stat.exists
+
+  - name: OS | "{{ env }}" - "{{ tag }}" | "{{ ansible_os_family }}" | ensure location dir
+    file:
+      path: /location
+      state: directory
+      owner: ravi
+      group: ravi
+      mode: '0755'
+    when: file_details.stat.exists != "false" and test_fstab.stdout == ""
+
+  - name: OS | "{{ env }}" - "{{ tag }}" | "{{ ansible_os_family }}" | fstab entry test
+    shell: grep "^s3fs#" /location/test
+    register: testfstab
+    ignore_errors: true
+
+  - debug: msg={{testfstab}}

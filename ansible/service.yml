@@ -1,0 +1,26 @@
+---
+- hosts: allhosts
+  #connection: local
+  gather_facts: true
+  become: yes
+  serial: 1
+  
+
+  tasks:
+  
+  - name: OS | "{{ ansible_os_family }}" | Install firewalld if needed
+    yum:
+      name:
+        - firewalld
+      state: latest
+
+  - systemd:
+      name: firewalld
+      state: stopped
+
+  - shell: |
+      echo "deploy"
+
+  - systemd:
+      name: firewalld
+      state: started
