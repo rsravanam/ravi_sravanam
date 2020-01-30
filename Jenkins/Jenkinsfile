@@ -14,7 +14,8 @@ pipeline {
 
             slackAlert(
                 channel: '#devops',
-                msg: '`A Test Driven by ravi'
+                status: 'SHARED LIB TEST'
+                environment: 'test'
             )
             }
     }
