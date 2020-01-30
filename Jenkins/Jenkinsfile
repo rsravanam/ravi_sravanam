@@ -11,6 +11,11 @@ pipeline {
                 branch: "master",
                 url: "https://github.com/rsravanam/python-learn.git"
             )
+
+            slackAlert(
+                channel: '#devops',
+                msg: '`A Test Driven by ravi'
+            )
             }
     }
     }

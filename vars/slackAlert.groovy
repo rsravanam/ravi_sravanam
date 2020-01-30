@@ -10,8 +10,10 @@ def getBuildDuration() {
     return Util.getTimeSpanString(System.currentTimeMillis() - currentBuild.startTimeInMillis)
 }
 
-def sendAlert(channel, message) {
+def call(Map stageParams) {
     
+    def channel = stageParams.channel
+    def alertMessage = stageParams.msg
     def buildResult = "${currentBuild.currentResult}"
     def BUILD_USER = getBuildUser()
     
