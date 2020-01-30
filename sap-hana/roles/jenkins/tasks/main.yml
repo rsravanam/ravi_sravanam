@@ -1,0 +1,23 @@
+---
+- name: Backup the system profile
+  command: cp /etc/profile /etc/profile_backup
+
+- name: Get jenkins yum repo
+  get_url: url=http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo dest=/etc/yum.repos.d/jenkins.repo
+  
+- name: Import jenkins key 
+  command: rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+  
+- name: Install jenkins
+  command: yum install jenkins
+  
+- name: Install firewalld
+  command: yum install firewalld  
+  
+- name: Adding jenkins port to firewall
+  command: firewall-cmd --zone=public --permanent --add-port=8080/tcp
+
+- name: reload firewall
+  command: firewall-cmd --reload
+
+

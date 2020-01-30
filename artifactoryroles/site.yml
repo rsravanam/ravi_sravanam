@@ -1,0 +1,12 @@
+#This playbook upload artifacts to Artifactory server
+# and deploys the artifacts from artifactory to nodes 
+---
+
+- hosts: artifactorycreds,deploy
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+
+  roles:
+    - {role: 'upload', tags: 'upload'}
+    - {role: 'deploy', tags: 'deploy'}

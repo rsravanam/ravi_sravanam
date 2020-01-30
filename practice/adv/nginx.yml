@@ -1,0 +1,29 @@
+---
+- hosts: nginx
+  vars:
+    nginx_port: 80
+
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  tasks:
+  - name: install nginx latest version
+    apt:
+      name: nginx
+      state: latest
+  - name: write the config file
+    template:
+      src: ~/adv/default.j2
+      dest: /etc/nginx/sites-available/default
+    notify:
+    - restart nginx
+  - name: ensure nginx is running
+    service:
+      name: nginx
+      state: started
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted

@@ -1,0 +1,6 @@
+---
+- name: restart agent
+  service: name=zabbix-agent state=restarted
+
+- name: restart firewalld
+  service: name=firewalld state=restarted

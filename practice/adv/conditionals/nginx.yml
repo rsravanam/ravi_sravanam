@@ -1,0 +1,38 @@
+---
+- hosts: nginx
+  vars:
+    nginx_port: 80
+
+  remote_user: root
+  become: yes
+  become_method: sudo
+
+  tasks:
+  - name: install nginx latest version
+    apt:
+      name: nginx
+      state: latest
+    when: ansible_os_family == 'Debian'
+
+  - name: write the config file
+    template:
+      src: ~/adv/default.j2
+      dest: /etc/nginx/sites-available/default
+    with_first_found:
+      - files:
+        - "{{ ansible_distribution }}.conf"
+        - default.j2
+        paths:
+         - templates/
+         - ~/adv/
+    notify:
+    - restart nginx
+  - name: ensure nginx is running
+    service:
+      name: nginx
+      state: started
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted

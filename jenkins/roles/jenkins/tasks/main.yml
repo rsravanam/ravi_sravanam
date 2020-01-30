@@ -1,0 +1,6 @@
+---
+- name: Download Jenkins war
+  get_url: url=http://ftp.yz.yamagata-u.ac.jp/pub/misc/jenkins/war/2.62/jenkins.war dest=/usr/share/tomcat/webapps/jenkins.war mode=0755
+
+- name: Start tomcat
+  service: name=tomcat state=restarted enabled=yes

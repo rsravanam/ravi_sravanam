@@ -1,0 +1,14 @@
+[artifactorycreds]
+localhost
+
+[artifactorycreds:vars]
+ansible_password=vagrant
+
+
+[deploy]
+10.1.1.21
+10.1.1.22
+10.1.1.23
+
+[deploy:vars]
+ansible_password=vagrant

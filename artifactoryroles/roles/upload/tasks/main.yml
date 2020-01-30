@@ -1,0 +1,5 @@
+---
+- name: Upload Artifacts to Artifactory Repo 
+  command: curl -u{{ admin_username }}:{{ admin_password }} -T /home/vagrant/CTCO/ravi_sravanam/target/LoginWebApp.war "http://10.1.1.35:8081/artifactory/ctc/LoginWebApp.war"
+  become: true
+  become_method: sudo

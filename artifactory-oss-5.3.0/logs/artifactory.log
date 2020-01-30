@@ -1,0 +1,1875 @@
+2017-05-23 18:00:03,999 [localhost-startStop-1] [INFO ] (o.j.a.s.v.c.EnvironmentConversionRunner:65) - Running environment pre bootstrap conversion for version 1.0.0
+2017-05-23 18:00:04,376 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessApplicationContext:23) - Refreshing org.jfrog.access.server.AccessApplicationContext@42a27edf: startup date [Tue May 23 18:00:04 UTC 2017]; root of context hierarchy
+2017-05-23 18:00:04,830 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2017-05-23 18:00:04,831 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/home/vagrant/artifactory-oss-5.3.0/data/derby
+2017-05-23 18:00:05,076 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelper:83) - ***Creating database schema***
+2017-05-23 18:00:05,438 [localhost-startStop-1] [INFO ] (o.j.a.s.s.TokenServiceImpl:72) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2017-05-23 18:00:05,453 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrap:284) - [ACCESS BOOTSTRAP] Generating private key and root certificate
+2017-05-23 18:00:08,222 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrap:182) - [ACCESS BOOTSTRAP] Server name not found in access properties. Setting server name: 723bdb83-8964-4278-b148-7f53757515d7
+2017-05-23 18:00:08,239 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrap:171) - [ACCESS BOOTSTRAP] Updating server '723bdb83-8964-4278-b148-7f53757515d7' private key finger print to: 53e1ab03c8ba17a9f6209515e2401dc31c3b8936a3865231f802fb70db3d0286
+2017-05-23 18:00:08,330 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrap:355) - [ACCESS BOOTSTRAP] No admin user exists - creating default admin user.
+2017-05-23 18:00:08,486 [localhost-startStop-1] [INFO ] (o.j.a.s.v.c.EnvironmentConversionRunner:91) - Running environment post bootstrap conversion for version 1.0.0
+2017-05-23 18:00:08,552 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:269) - 
+                _   _  __           _                      ____   _____ _____
+     /\        | | (_)/ _|         | |                    / __ \ / ____/ ____|
+    /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _  | |  | | (___| (___
+   / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | | | |  | |\___ \\___ \
+  / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| | | |__| |____) |___) |
+ /_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |  \____/|_____/_____/
+ Version:  5.3.0                                   __/ |
+ Revision: 50045                                  |___/
+ Artifactory Home: '/home/vagrant/artifactory-oss-5.3.0'
+
+2017-05-23 18:00:08,692 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to NOT READY by refresh
+2017-05-23 18:00:08,692 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:213) - Refreshing Artifactory: startup date [Tue May 23 18:00:08 UTC 2017]; root of context hierarchy
+2017-05-23 18:00:13,170 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:191) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2017-05-23 18:00:13,171 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:193) - Connection URL: jdbc:derby:/home/vagrant/artifactory-oss-5.3.0/data/derby
+2017-05-23 18:00:13,195 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:107) - ***Creating database schema***
+2017-05-23 18:00:19,097 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'blob' from jar:file:/home/vagrant/artifactory-oss-5.3.0/tomcat/webapps/artifactory/WEB-INF/lib/artifactory-storage-db-5.3.0.jar!/
+2017-05-23 18:00:19,117 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'empty, external-file, external-wrapper, file-system, cache-fs, retry' from jar:file:/home/vagrant/artifactory-oss-5.3.0/tomcat/webapps/artifactory/WEB-INF/lib/binary-store-core-2.0.12.jar!/
+2017-05-23 18:00:21,187 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:647) - Starting Quartz Scheduler now
+2017-05-23 18:00:21,374 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:220) - Artifactory context starting up 38 Spring Beans...
+2017-05-23 18:00:21,399 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:239) - Loading bootstrap configuration (artifactory home dir is /home/vagrant/artifactory-oss-5.3.0).
+2017-05-23 18:00:22,059 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:281) - Saving new configuration in storage...
+2017-05-23 18:00:22,204 [art-init] [INFO ] (o.a.c.CentralConfigServiceImpl:285) - New configuration saved.
+2017-05-23 18:00:22,789 [art-init] [INFO ] (o.j.a.s.a.TokenAuditor:41) - [AUDIT] Token created by 'admin': tokenId='e22861e3-a2dd-474b-9057-88cfc879cda2', issuer='jf-artifactory@0ca40263-929a-4c61-8f20-50b067bc40ac', subject='jf-artifactory@0ca40263-929a-4c61-8f20-50b067bc40ac', expiry=2441642422773, refreshable=false
+2017-05-23 18:00:23,305 [art-init] [INFO ] (o.a.i.InfoWriter    :87) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /home/vagrant/artifactory-oss-5.3.0/bin
+   user.home                                                             | /root
+   user.language                                                         | en
+   user.name                                                             | root
+   user.timezone                                                         | UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 129499160
+   Non-Heap Memory Usage-Commited                                        | 91873280
+   Non-Heap Memory Usage-Init                                            | 2555904
+   Non-Heap Memory Usage-Max                                             | -1
+   Non-Heap Memory Usage-Used                                            | 89198936
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 3.10.0-514.16.1.el7.x86_64
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.runMode.devHa                                             | false
+   artifactory.version                                                   | 5.3.0
+   artifactory.revision                                                  | 50045
+   artifactory.timestamp                                                 | 1494329569467
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http://service.jfrog.org/artifactory/addons/info/%s
+   artifactory.addons.info.url                                           | http://www.jfrog.com/confluence/display/RTF/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.repo.global.disabled                                      | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.docker.tokens.cache.idleTimeSecs                          | 240
+   artifactory.artifactory.tokens.cache.idleTimeSecs                     | 300
+   artifactory.cacheFS.sync.quietPeriodSecs                              | 900
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.gc.readersMaxTimeSecs                                     | 10800
+   artifactory.gc.failCount.threshold                                    | 3
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.initSize                    | 100
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.master.key                                       | ************************
+   artifactory.security.master.key.numOfFallbackKeys                     | *
+   artifactory.security.disableRememberMe                                | false
+   artifactory.security.ldap.forceGroupMemberAttFullDN                   | false
+   artifactory.security.ldap.disable.group.search.attributes.limitation  | false
+   artifactory.security.ldap.group.search.filterThreshold                | 0
+   artifactory.enable.aql.read.committed                                 | false
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.metadata.plugin.calculation.workers                   | 2
+   artifactory.mvn.metadata.calculation.workers                          | 8
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz,tar.bz2
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.npm.tag.tagLatestByPublish                                | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http://service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.plugin.aol.support                                        | false
+   artifactory.aol.dedicated.server                                      | false
+   artifactory.aol.displayAccountManagementLink                          | true
+   artifactory.aol.security.http.sso.enable                              | false
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.http.forceForbiddenResponse                               | false
+   artifactory.http.connectionPool.timeToLive                            | 30
+   artifactory.http.enableCookieManagement                               | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.composer.metadata.extractor.workers                       | 20
+   artifactory.composer.metadata.index.workers                           | 10
+   artifactory.chef.metadata.index.workers                               | 10
+   artifactory.yum.virtual.metadata.calculation.workers                  | 5
+   artifactory.yum.calculationRequest.aggregationTimeWindowSecs          | 60
+   artifactory.yum.calculationRequest.aggregationCycleSecs               | 60
+   artifactory.debian.metadata.calculation.workers                       | 8
+   artifactory.debian.remote.etag                                        | true
+   artifactory.debian.metadata.validation                                | true
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.replication.properties.max.length                         | 100000
+   artifactory.replication.statistics.max.length                         | 5000
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz
+   artifactory.bintray.jcenter.url                                       | http://jcenter.bintray.com
+   artifactory.bintray.url                                               | https://bintray.com
+   artifactory.bintray.api.url                                           | https://api.bintray.com
+   artifactory.bintray.token.expirySecs                                  | 3600
+   artifactory.bintray.distributionRegex.timeoutMillis                   | 180000
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.bintray.client.threadPool.size                            | 5
+   artifactory.enable.ui.pages.in.Iframe                                 | false
+   artifactory.bintray.client.requestTimeoutMS                           | 150000
+   artifactory.bintray.client.distribution.requestTimeoutMS              | 30000
+   artifactory.bintray.client.signRequestTimeoutMS                       | 45000
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.stats.remote.flushIntervalSecs                            | 35
+   artifactory.stats.flushTimeoutSecs                                    | 120
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.repo.virtualCacheCleanup.maxAgeHours                      | 168
+   artifactory.repo.virtualCacheCleanup.pattern                          | *.pom
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 2000
+   artifactory.db.idGenerator.max.update.retries                         | 50
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   artifactory.security.authentication.crowd.group.startIndex            | 0
+   artifactory.security.authentication.crowd.group.maxResults            | 9999
+   artifactory.ui.hideChecksums                                          | false
+   artifactory.archive.indexer.intervalSecs                              | 60
+   artifactory.xray.indexer.intervalSecs                                 | 60
+   artifactory.xray.force.reindex                                        | false
+   artifactory.xray.scanBuild.httpClient.max.connections                 | 30
+   artifactory.nuget.inMemoryRemoteCaches                                | true
+   artifactory.nuget.forceAuthentication                                 | false
+   artifactory.nuget.allowRootGetWithAnon                                | false
+   artifactory.ha.heartbeat.intervalSecs                                 | 5
+   artifactory.ha.heartbeat.staleSecs                                    | 30
+   artifactory.ha.heartbeat.recently.worked.trigger.days                 | 7
+   artifactory.binary.store.error.notification.intervalSecs              | 30
+   artifactory.binary.store.error.notification.staleSecs                 | 30
+   artifactory.ha.membersIntroduction.intervalSecs                       | 30
+   artifactory.ha.membersIntroduction.staleSecs                          | 30
+   artifactory.npm.index.quietPeriodSecs                                 | 60
+   artifactory.npm.index.cycleSecs                                       | 60
+   artifactory.import.max.parallelRepos                                  | 1
+   artifactory.debian.distribution.path                                  | dists
+   artifactory.opkg.index.quietPeriodSecs                                | 60
+   artifactory.opkg.index.cycleSecs                                      | 2
+   artifactory.debian.default.architectures                              | i386,amd64
+   artifactory.pypi.index.quietPeriodSecs                                | 60
+   artifactory.pypi.index.sleepMilliSecs                                 | 60
+   artifactory.docker.cleanup.maxAgeMillis                               | 86400000
+   artifactory.docker.tags.cleanup.intervalSecs                          | 300
+   artifactory.docker.tags.cleanup.quietPeriodSecs                       | 60
+   artifactory.http.range.support                                        | true
+   artifactory.acl.dirty.read.timeout                                    | 20000
+   artifactory.central.config.dirty.read.timeout.millis                  | 2000
+   artifactory.repositories.dirty.read.timeout.millis                    | 5000
+   artifactory.ping.allowUnauthenticated                                 | false
+   artifactory.repo.http.idleConnectionMonitorInterval                   | 10
+   artifactory.repo.http.disableIdleConnectionMonitoring                 | false
+   artifactory.support.core.bundle.contentCollectionAwaitTimeout         | 60
+   artifactory.support.core.bundle.waitForSlotBeforeWithdraw             | 600
+   artifactory.support.core.bundle.maxBundles                            | 5
+   artifactory.binary.provider.zones                                     | a,b,c
+   artifactory.binary.provider.prune.chunk.size                          | 500
+   artifactory.properties.search.chunk.size                              | 500
+   artifactory.security.useFrontCacheForBlockedUsers                     | true
+   artifactory.security.loginBlockDelay                                  | 500
+   artifactory.security.password.expiry.passwordExpireNotificationJobIntervalSecs| *****
+   artifactory.security.password.expiry.passwordExpireJobIntervalSecs    | *****
+   artifactory.security.password.expiry.daysToNotifyBefore               | *
+   artifactory.http.client.max.total.connections                         | 50
+   artifactory.http.client.max.connections.per.route                     | 50
+   artifactory.hazelcast.max.lock.lease.time.minutes                     | 30
+   artifactory.repo.remote.blockedMismatchingMimeTypes                   | text/html,application/xhtml+xml
+   artifactory.mvn.metadata.calculation.skip.delete.event                | false
+   artifactory.repo.remote.browsing.content.length.limit.KB              | 1024
+   artifactory.hazelcast.management                                      | false
+   artifactory.sumologic.api.url                                         | https://auth.sumologic.com
+   artifactory.move.copy.max.folder.cache.size                           | 1000000
+   artifactory.move.copy.default.transaction.size                        | 1000
+   artifactory.node.properties.replace.all                               | false
+   artifactory.node.properties.log.performance                           | false
+   artifactory.workQueue.execution.syncExecutionTimeoutMillis            | 120000
+   artifactory.workitem.max.lock.lease.time.minutes                      | 30
+   artifactory.security.communication.constant                           | ArtifactorySecurityCommunicationConstant
+   artifactory.nuget.disablePermissionCheck                              | false
+   artifactory.treebrowser.sortRepositories.sortByType                   | virtual,distribution,local,remote
+   artifactory.maven.metadata.publishModelVersion                        | true
+   artifactory.access.token.expiresIn.default                            | 3600
+   artifactory.puppet.metadata.calculation.workers                       | 5
+   artifactory.puppet.reindex.period                                     | 1800
+   artifactory.puppet.additional.modulegroup                             | 
+   artifactory.puppet.additional.endorsement                             | 
+   artifactory.onboarding.skipWizard                                     | false
+   artifactory.configuration.manager.retry.amount                        | 3
+   artifactory.aggregation.time.window.secs                              | 60
+   artifactory.most.downloaded.cache.idleTimeSecs                        | 900
+   artifactory.home                                                      | /home/vagrant/artifactory-oss-5.3.0
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 52.0
+   java.home                                                             | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre
+   java.io.tmpdir                                                        | /home/vagrant/artifactory-oss-5.3.0/tomcat/temp
+   java.runtime.name                                                     | OpenJDK Runtime Environment
+   java.runtime.version                                                  | 1.8.0_131-b11
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.8
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http://java.oracle.com/
+   java.vendor.url.bug                                                   | http://bugreport.sun.com/bugreport/
+   java.version                                                          | 1.8.0_131
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | OpenJDK 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.8
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 25.131-b11
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | UTF-8
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/home/vagrant/artifactory-oss-5.3.0/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Djdk.tls.ephemeralDHKeySize=****
+                                                                         | -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX:+UseG1GC
+                                                                         | -XX:OnOutOfMemoryError=kill -9 %p
+                                                                         | -Djruby.compile.invokedynamic=false
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Dartdist=zip
+                                                                         | -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true
+                                                                         | -Djava.security.egd=file:/dev/./urandom
+                                                                         | -Dartifactory.home=/home/vagrant/artifactory-oss-5.3.0
+                                                                         | -Djava.endorsed.dirs=/home/vagrant/artifactory-oss-5.3.0/tomcat/endorsed
+                                                                         | -Dcatalina.base=/home/vagrant/artifactory-oss-5.3.0/tomcat
+                                                                         | -Dcatalina.home=/home/vagrant/artifactory-oss-5.3.0/tomcat
+                                                                         | -Djava.io.tmpdir=/home/vagrant/artifactory-oss-5.3.0/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+   java.endorsed.dirs                                                    | /home/vagrant/artifactory-oss-5.3.0/tomcat/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+   java.class.path                                                       | /home/vagrant/artifactory-oss-5.3.0/tomcat/bin/bootstrap.jar
+                                                                         | /home/vagrant/artifactory-oss-5.3.0/tomcat/bin/tomcat-juli.jar
+
+2017-05-23 18:00:23,596 [art-init] [INFO ] (o.a.s.SecurityServiceImpl:2274) - Creating the default super user 'admin', since no admin user exists!
+2017-05-23 18:00:23,709 [art-init] [INFO ] (o.a.s.SecurityServiceImpl:2301) - Creating the default anonymous user, since it does not exist!
+2017-05-23 18:00:24,135 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:378) - Replacing temporary DB channel with permanent DB channel
+2017-05-23 18:00:24,136 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:381) - Successfully closed temporary DB channel
+2017-05-23 18:00:24,169 [Thread-5] [INFO ] (o.a.c.c.w.FileWatchingManager:63) - Starting watch of folder configurations
+2017-05-23 18:00:24,183 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:276) - [Node ID: b6c6fa8762ad88db:-43ed49eb:15c367733e3:-8000] detected local modify for config 'db.properties'
+2017-05-23 18:00:24,279 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:276) - [Node ID: b6c6fa8762ad88db:-43ed49eb:15c367733e3:-8000] detected local modify for config 'artifactory.system.properties'
+2017-05-23 18:00:24,293 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:276) - [Node ID: b6c6fa8762ad88db:-43ed49eb:15c367733e3:-8000] detected local modify for config 'artifactory.mimeType'
+2017-05-23 18:00:24,302 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:276) - [Node ID: b6c6fa8762ad88db:-43ed49eb:15c367733e3:-8000] detected local modify for config 'artifactory.binarystore.xml'
+2017-05-23 18:00:24,329 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to READY by refresh
+2017-05-23 18:00:24,329 [art-init] [INFO ] (o.a.c.ConvertersManagerImpl:206) - Sending configuration update message to slaves
+2017-05-23 18:00:24,335 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:215) - 
+###########################################################
+### Artifactory successfully started (15.791 seconds)   ###
+###########################################################
+
+2017-05-23 18:00:38,485 [http-nio-8081-exec-7] [INFO ] (o.a.s.SecurityServiceImpl:1095) - Password for user 'admin' has been successfully changed
+2017-05-23 18:00:48,415 [http-nio-8081-exec-9] [INFO ] (o.a.u.r.s.a.c.r.CreateRepositoryConfigService:86) - Creating repository generic-local
+2017-05-23 18:00:48,634 [http-nio-8081-exec-9] [INFO ] (o.a.c.CentralConfigServiceImpl:425) - Reloading configuration...
+2017-05-23 18:00:48,645 [http-nio-8081-exec-9] [INFO ] (o.a.c.CentralConfigServiceImpl:281) - Saving new configuration in storage...
+2017-05-23 18:00:48,730 [http-nio-8081-exec-9] [INFO ] (o.a.c.CentralConfigServiceImpl:285) - New configuration saved.
+2017-05-23 18:00:48,730 [http-nio-8081-exec-9] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to NOT READY by reload
+2017-05-23 18:00:49,005 [http-nio-8081-exec-9] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to READY by reload
+2017-05-23 18:00:49,006 [http-nio-8081-exec-9] [INFO ] (o.a.c.CentralConfigServiceImpl:437) - Configuration reloaded.
+2017-05-23 18:00:49,130 [http-nio-8081-exec-9] [INFO ] (o.a.r.o.YamlConfigCreator:53) - Saving bootstrap settings to artifactory.config.20170523.180049.yml
+2017-05-23 19:01:43,176 [http-nio-8081-exec-5] [INFO ] (o.a.u.r.s.a.c.r.CreateRepositoryConfigService:86) - Creating repository ctc
+2017-05-23 19:01:43,272 [http-nio-8081-exec-5] [INFO ] (o.a.c.CentralConfigServiceImpl:425) - Reloading configuration...
+2017-05-23 19:01:43,273 [http-nio-8081-exec-5] [INFO ] (o.a.c.CentralConfigServiceImpl:281) - Saving new configuration in storage...
+2017-05-23 19:01:43,302 [http-nio-8081-exec-5] [INFO ] (o.a.c.CentralConfigServiceImpl:285) - New configuration saved.
+2017-05-23 19:01:43,302 [http-nio-8081-exec-5] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to NOT READY by reload
+2017-05-23 19:01:43,374 [http-nio-8081-exec-5] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to READY by reload
+2017-05-23 19:01:43,375 [http-nio-8081-exec-5] [INFO ] (o.a.c.CentralConfigServiceImpl:437) - Configuration reloaded.
+2017-05-23 19:02:06,002 [http-nio-8081-exec-8] [INFO ] (o.a.s.SecurityServiceImpl:1476) - Creating keys for user 'admin'
+2017-05-23 19:41:50,075 [http-nio-8081-exec-2] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 19:42:20,069 [art-exec-7] [INFO ] (o.a.s.a.ArchiveIndexerImpl:145) - Indexing archive: ctc:LoginWebApp.war
+2017-05-23 19:47:33,696 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 19:47:38,248 [http-nio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 19:47:57,267 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 19:48:10,753 [http-nio-8081-exec-8] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 19:53:35,830 [http-nio-8081-exec-9] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 19:54:20,049 [art-exec-3] [INFO ] (o.a.s.a.ArchiveIndexerImpl:145) - Indexing archive: ctc:LoginWebApp.war
+2017-05-23 20:00:00,078 [art-exec-1] [INFO ] (o.a.r.s.t.p.TrashcanPruner:92) - Trashcan pruning total execution time: '68 millis'
+2017-05-23 20:00:00,109 [art-exec-1] [INFO ] (o.a.s.d.b.s.BinaryServiceImpl:408) - Found 1 candidates for deletion
+2017-05-23 20:00:00,196 [art-exec-1] [INFO ] (o.a.s.b.s.GarbageCollectorInfo:80) - Storage garbage collector report:
+Number of binaries:      2
+Total execution time:    110 millis
+Candidates for deletion: 1
+Checksums deleted:       1
+Binaries deleted:        1
+Total size freed:        1.19 MB
+Current total size:      1.19 MB
+2017-05-23 20:00:10,403 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:*.war' Content-Length: 1251995
+2017-05-23 20:00:10,433 [http-nio-8081-exec-10] [ERROR] (o.a.r.d.DbStoringRepoMixin:265) - Couldn't save resource, reason:
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) [na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) [na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) [artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) [na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.authentication.ArtifactoryAuthenticationFilterChain.lambda$1(ArtifactoryAuthenticationFilterChain.java:136) [artifactory-web-application-5.3.0.jar:na]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:201) ~[spring-security-web-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.artifactory.webapp.servlet.authentication.ArtifactoryBasicAuthenticationFilter.doFilter(ArtifactoryBasicAuthenticationFilter.java:84) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.authentication.ArtifactoryAuthenticationFilterChain.doFilter(ArtifactoryAuthenticationFilterChain.java:172) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:281) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) ~[spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) ~[spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) ~[catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) ~[tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) ~[tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) ~[tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) ~[tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017-05-23 20:00:10,436 [http-nio-8081-exec-10] [ERROR] (o.a.w.s.RepoFilter  :222) - Sending HTTP error code 500: Invalid path. '*' is not a valid name character: ctc/*.war
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) ~[na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) ~[na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) ~[artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) ~[na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.authentication.ArtifactoryAuthenticationFilterChain.lambda$1(ArtifactoryAuthenticationFilterChain.java:136) [artifactory-web-application-5.3.0.jar:na]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilter(BasicAuthenticationFilter.java:201) ~[spring-security-web-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.artifactory.webapp.servlet.authentication.ArtifactoryBasicAuthenticationFilter.doFilter(ArtifactoryBasicAuthenticationFilter.java:84) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.authentication.ArtifactoryAuthenticationFilterChain.doFilter(ArtifactoryAuthenticationFilterChain.java:172) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:281) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) ~[spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) ~[spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) ~[artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) ~[catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) ~[catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) ~[tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) ~[tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) ~[tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) ~[tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_131]
+2017-05-23 20:00:42,118 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:*.war' Content-Length: 1251995
+2017-05-23 20:00:42,141 [http-nio-8081-exec-7] [ERROR] (o.a.r.d.DbStoringRepoMixin:265) - Couldn't save resource, reason:
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) [na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) [na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) [artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) [na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.AccessFilter.useAuthentication(AccessFilter.java:399) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:275) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) [catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) [tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) [tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-05-23 20:00:42,142 [http-nio-8081-exec-7] [ERROR] (o.a.w.s.RepoFilter  :222) - Sending HTTP error code 500: Invalid path. '*' is not a valid name character: ctc/*.war
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) ~[na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) ~[na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) ~[artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) ~[na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.AccessFilter.useAuthentication(AccessFilter.java:399) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:275) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) [catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) [tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) [tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-05-23 20:00:58,118 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:*.war' Content-Length: 1251995
+2017-05-23 20:00:58,152 [http-nio-8081-exec-1] [ERROR] (o.a.r.d.DbStoringRepoMixin:265) - Couldn't save resource, reason:
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) [na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) [na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) [artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) [na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.AccessFilter.useAuthentication(AccessFilter.java:399) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:275) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) [catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) [tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) [tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-05-23 20:00:58,154 [http-nio-8081-exec-1] [ERROR] (o.a.w.s.RepoFilter  :222) - Sending HTTP error code 500: Invalid path. '*' is not a valid name character: ctc/*.war
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) ~[na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) ~[na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) ~[artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) ~[na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.AccessFilter.useAuthentication(AccessFilter.java:399) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:275) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) [catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) [tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) [tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-05-23 20:02:42,917 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:login*.war' Content-Length: 1251995
+2017-05-23 20:02:42,948 [http-nio-8081-exec-5] [ERROR] (o.a.r.d.DbStoringRepoMixin:265) - Couldn't save resource, reason:
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/login*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) [spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) [na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) [na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) [artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) [artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) [artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) [spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) [na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.AccessFilter.useAuthentication(AccessFilter.java:399) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:275) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) [catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) [tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) [tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-05-23 20:02:42,951 [http-nio-8081-exec-5] [ERROR] (o.a.w.s.RepoFilter  :222) - Sending HTTP error code 500: Invalid path. '*' is not a valid name character: ctc/login*.war
+java.nio.file.InvalidPathException: Invalid path. '*' is not a valid name character: ctc/login*.war
+	at org.artifactory.util.PathValidator.validate(PathValidator.java:107) ~[artifactory-common-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableItem.<init>(DbMutableItem.java:107) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbMutableFile.<init>(DbMutableFile.java:62) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:86) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.createNewMutableItem(DbFileProvider.java:1) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFsItemProvider.getOrCreateMutableFsItem(DbFsItemProvider.java:146) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.storage.db.fs.model.DbFileProvider.getOrCreMutableFile(DbFileProvider.java:75) ~[artifactory-storage-db-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.createOrGetFile(DbStoringRepoMixin.java:655) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbStoringRepoMixin.saveResource(DbStoringRepoMixin.java:180) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.db.DbLocalRepo.saveResource(DbLocalRepo.java:152) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResourceInTransaction(RepositoryServiceImpl.java:1744) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResourceInTransaction(Unknown Source) ~[na:na]
+	at org.artifactory.repo.service.RepositoryServiceImpl.saveResource(RepositoryServiceImpl.java:1712) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy44.saveResource(Unknown Source) ~[na:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithContent(UploadServiceImpl.java:681) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItemWithProvidedContent(UploadServiceImpl.java:647) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadItem(UploadServiceImpl.java:565) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadFile(UploadServiceImpl.java:538) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.uploadArtifact(UploadServiceImpl.java:517) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.adjustResponseAndUpload(UploadServiceImpl.java:247) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.validateRequestAndUpload(UploadServiceImpl.java:187) ~[artifactory-core-5.3.0.jar:na]
+	at org.artifactory.engine.UploadServiceImpl.upload(UploadServiceImpl.java:146) ~[artifactory-core-5.3.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.artifactory.request.aop.RequestAdvice.invoke(RequestAdvice.java:67) ~[artifactory-core-5.3.0.jar:na]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207) ~[spring-aop-4.1.5.RELEASE.jar:4.1.5.RELEASE]
+	at com.sun.proxy.$Proxy49.upload(Unknown Source) ~[na:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doUpload(RepoFilter.java:216) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.execute(RepoFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.RepoFilter.doFilter(RepoFilter.java:94) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.AccessFilter.useAuthentication(AccessFilter.java:399) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.authenticateAndExecute(AccessFilter.java:275) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilterInternal(AccessFilter.java:205) [artifactory-web-application-5.3.0.jar:na]
+	at org.artifactory.webapp.servlet.AccessFilter.doFilter(AccessFilter.java:165) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.RequestFilter.doFilter(RequestFilter.java:67) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:164) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80) [spring-session-1.2.2.RELEASE.jar:na]
+	at org.artifactory.webapp.servlet.SessionFilter.doFilter(SessionFilter.java:62) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.artifactory.webapp.servlet.ArtifactoryFilter.doFilter(ArtifactoryFilter.java:116) [artifactory-web-application-5.3.0.jar:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:94) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141) [catalina.jar:8.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88) [catalina.jar:8.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:509) [catalina.jar:8.0.41]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1104) [tomcat-coyote.jar:8.0.41]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:684) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1524) [tomcat-coyote.jar:8.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1480) [tomcat-coyote.jar:8.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
+2017-05-23 21:16:37,923 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 21:16:44,499 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 21:17:14,378 [http-nio-8081-exec-7] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 21:17:20,049 [art-exec-6] [INFO ] (o.a.s.a.ArchiveIndexerImpl:145) - Indexing archive: ctc:LoginWebApp.war
+2017-05-23 22:05:04,427 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 22:07:09,941 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 22:07:20,048 [art-exec-3] [INFO ] (o.a.s.a.ArchiveIndexerImpl:145) - Indexing archive: ctc:LoginWebApp.war
+2017-05-23 22:07:59,643 [http-nio-8081-exec-1] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 22:08:39,987 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 22:09:20,049 [art-exec-8] [INFO ] (o.a.s.a.ArchiveIndexerImpl:145) - Indexing archive: ctc:LoginWebApp.war
+2017-05-23 22:12:15,948 [http-nio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 22:12:36,251 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251995
+2017-05-23 22:13:20,053 [art-exec-5] [INFO ] (o.a.s.a.ArchiveIndexerImpl:145) - Indexing archive: ctc:LoginWebApp.war
+2017-05-23 23:20:18,595 [http-nio-8081-exec-3] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251994
+2017-05-23 23:20:20,047 [art-exec-6] [INFO ] (o.a.s.a.ArchiveIndexerImpl:145) - Indexing archive: ctc:LoginWebApp.war
+2017-05-23 23:31:03,330 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251994
+2017-05-24 00:00:00,020 [art-exec-6] [INFO ] (o.a.r.s.t.p.TrashcanPruner:92) - Trashcan pruning total execution time: '17 millis'
+2017-05-24 00:00:00,023 [art-exec-6] [INFO ] (o.a.s.d.b.s.BinaryServiceImpl:408) - Found 4 candidates for deletion
+2017-05-24 00:00:00,070 [art-exec-6] [INFO ] (o.a.s.b.s.GarbageCollectorInfo:80) - Storage garbage collector report:
+Number of binaries:      6
+Total execution time:    49 millis
+Candidates for deletion: 4
+Checksums deleted:       4
+Binaries deleted:        4
+Total size freed:        4.78 MB
+Current total size:      2.39 MB
+2017-05-24 00:12:00,003 [art-exec-6] [INFO ] (o.a.r.c.VirtualCacheCleanupServiceImpl:128) - Starting cleanup of virtual repositories
+2017-05-24 00:12:00,003 [art-exec-6] [INFO ] (o.a.r.c.VirtualCacheCleanupServiceImpl:132) - Completed virtual repositories cleanup: removed 0 cached files.
+2017-05-24 01:44:40,449 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to NOT READY by destroy
+2017-05-24 01:44:40,451 [Thread-5] [INFO ] (o.a.c.c.w.FileWatchingManager:107) - Watch service ended on destroy
+2017-05-24 01:44:40,452 [Thread-5] [INFO ] (o.a.c.c.w.FileWatchingManager:113) - End watch of folder configurations
+2017-05-24 01:44:40,457 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:307) - Destroying 38 Artifactory Spring Beans
+2017-05-24 01:44:40,459 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Backup from task service handler.
+2017-05-24 01:44:40,460 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Artifact Cleanup from task service handler.
+2017-05-24 01:44:40,462 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Indexer from task service handler.
+2017-05-24 01:44:40,464 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Garbage Collector from task service handler.
+2017-05-24 01:44:40,501 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:325) - Closing Artifactory: startup date [Tue May 23 18:00:08 UTC 2017]; root of context hierarchy
+2017-05-24 01:44:40,548 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:765) - Shutting down Quartz Scheduler
+2017-05-24 01:44:40,641 [localhost-startStop-2] [INFO ] (o.j.a.s.AccessApplicationContext:862) - Closing org.jfrog.access.server.AccessApplicationContext@42a27edf: startup date [Tue May 23 18:00:04 UTC 2017]; root of context hierarchy
+2017-05-25 07:24:26,954 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessApplicationContext:23) - Refreshing org.jfrog.access.server.AccessApplicationContext@14a5e962: startup date [Thu May 25 07:24:26 UTC 2017]; root of context hierarchy
+2017-05-25 07:24:27,438 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2017-05-25 07:24:27,439 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/home/vagrant/artifactory-oss-5.3.0/data/derby
+2017-05-25 07:24:27,867 [localhost-startStop-1] [INFO ] (o.j.a.s.s.TokenServiceImpl:72) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2017-05-25 07:24:28,166 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrap:171) - [ACCESS BOOTSTRAP] Updating server '723bdb83-8964-4278-b148-7f53757515d7' private key finger print to: 53e1ab03c8ba17a9f6209515e2401dc31c3b8936a3865231f802fb70db3d0286
+2017-05-25 07:24:28,430 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:269) - 
+                _   _  __           _                      ____   _____ _____
+     /\        | | (_)/ _|         | |                    / __ \ / ____/ ____|
+    /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _  | |  | | (___| (___
+   / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | | | |  | |\___ \\___ \
+  / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| | | |__| |____) |___) |
+ /_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |  \____/|_____/_____/
+ Version:  5.3.0                                   __/ |
+ Revision: 50045                                  |___/
+ Artifactory Home: '/home/vagrant/artifactory-oss-5.3.0'
+
+2017-05-25 07:24:28,654 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to NOT READY by refresh
+2017-05-25 07:24:28,655 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:213) - Refreshing Artifactory: startup date [Thu May 25 07:24:28 UTC 2017]; root of context hierarchy
+2017-05-25 07:24:34,411 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:191) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2017-05-25 07:24:34,412 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:193) - Connection URL: jdbc:derby:/home/vagrant/artifactory-oss-5.3.0/data/derby
+2017-05-25 07:24:37,415 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'blob' from jar:file:/home/vagrant/artifactory-oss-5.3.0/tomcat/webapps/artifactory/WEB-INF/lib/artifactory-storage-db-5.3.0.jar!/
+2017-05-25 07:24:37,432 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'empty, external-file, external-wrapper, file-system, cache-fs, retry' from jar:file:/home/vagrant/artifactory-oss-5.3.0/tomcat/webapps/artifactory/WEB-INF/lib/binary-store-core-2.0.12.jar!/
+2017-05-25 07:24:41,284 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:647) - Starting Quartz Scheduler now
+2017-05-25 07:24:41,444 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:220) - Artifactory context starting up 38 Spring Beans...
+2017-05-25 07:24:43,139 [art-init] [INFO ] (o.a.i.InfoWriter    :87) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /home/vagrant/artifactory-oss-5.3.0/tomcat/bin
+   user.home                                                             | /root
+   user.language                                                         | en
+   user.name                                                             | root
+   user.timezone                                                         | UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 75868184
+   Non-Heap Memory Usage-Commited                                        | 86671360
+   Non-Heap Memory Usage-Init                                            | 2555904
+   Non-Heap Memory Usage-Max                                             | -1
+   Non-Heap Memory Usage-Used                                            | 84094968
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 3.10.0-514.16.1.el7.x86_64
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.runMode.devHa                                             | false
+   artifactory.version                                                   | 5.3.0
+   artifactory.revision                                                  | 50045
+   artifactory.timestamp                                                 | 1494329569467
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http://service.jfrog.org/artifactory/addons/info/%s
+   artifactory.addons.info.url                                           | http://www.jfrog.com/confluence/display/RTF/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.repo.global.disabled                                      | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.docker.tokens.cache.idleTimeSecs                          | 240
+   artifactory.artifactory.tokens.cache.idleTimeSecs                     | 300
+   artifactory.cacheFS.sync.quietPeriodSecs                              | 900
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.gc.readersMaxTimeSecs                                     | 10800
+   artifactory.gc.failCount.threshold                                    | 3
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.initSize                    | 100
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.master.key                                       | ************************
+   artifactory.security.master.key.numOfFallbackKeys                     | *
+   artifactory.security.disableRememberMe                                | false
+   artifactory.security.ldap.forceGroupMemberAttFullDN                   | false
+   artifactory.security.ldap.disable.group.search.attributes.limitation  | false
+   artifactory.security.ldap.group.search.filterThreshold                | 0
+   artifactory.enable.aql.read.committed                                 | false
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.metadata.plugin.calculation.workers                   | 2
+   artifactory.mvn.metadata.calculation.workers                          | 8
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz,tar.bz2
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.npm.tag.tagLatestByPublish                                | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http://service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.plugin.aol.support                                        | false
+   artifactory.aol.dedicated.server                                      | false
+   artifactory.aol.displayAccountManagementLink                          | true
+   artifactory.aol.security.http.sso.enable                              | false
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.http.forceForbiddenResponse                               | false
+   artifactory.http.connectionPool.timeToLive                            | 30
+   artifactory.http.enableCookieManagement                               | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.composer.metadata.extractor.workers                       | 20
+   artifactory.composer.metadata.index.workers                           | 10
+   artifactory.chef.metadata.index.workers                               | 10
+   artifactory.yum.virtual.metadata.calculation.workers                  | 5
+   artifactory.yum.calculationRequest.aggregationTimeWindowSecs          | 60
+   artifactory.yum.calculationRequest.aggregationCycleSecs               | 60
+   artifactory.debian.metadata.calculation.workers                       | 8
+   artifactory.debian.remote.etag                                        | true
+   artifactory.debian.metadata.validation                                | true
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.replication.properties.max.length                         | 100000
+   artifactory.replication.statistics.max.length                         | 5000
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz
+   artifactory.bintray.jcenter.url                                       | http://jcenter.bintray.com
+   artifactory.bintray.url                                               | https://bintray.com
+   artifactory.bintray.api.url                                           | https://api.bintray.com
+   artifactory.bintray.token.expirySecs                                  | 3600
+   artifactory.bintray.distributionRegex.timeoutMillis                   | 180000
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.bintray.client.threadPool.size                            | 5
+   artifactory.enable.ui.pages.in.Iframe                                 | false
+   artifactory.bintray.client.requestTimeoutMS                           | 150000
+   artifactory.bintray.client.distribution.requestTimeoutMS              | 30000
+   artifactory.bintray.client.signRequestTimeoutMS                       | 45000
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.stats.remote.flushIntervalSecs                            | 35
+   artifactory.stats.flushTimeoutSecs                                    | 120
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.repo.virtualCacheCleanup.maxAgeHours                      | 168
+   artifactory.repo.virtualCacheCleanup.pattern                          | *.pom
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 2000
+   artifactory.db.idGenerator.max.update.retries                         | 50
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   artifactory.security.authentication.crowd.group.startIndex            | 0
+   artifactory.security.authentication.crowd.group.maxResults            | 9999
+   artifactory.ui.hideChecksums                                          | false
+   artifactory.archive.indexer.intervalSecs                              | 60
+   artifactory.xray.indexer.intervalSecs                                 | 60
+   artifactory.xray.force.reindex                                        | false
+   artifactory.xray.scanBuild.httpClient.max.connections                 | 30
+   artifactory.nuget.inMemoryRemoteCaches                                | true
+   artifactory.nuget.forceAuthentication                                 | false
+   artifactory.nuget.allowRootGetWithAnon                                | false
+   artifactory.ha.heartbeat.intervalSecs                                 | 5
+   artifactory.ha.heartbeat.staleSecs                                    | 30
+   artifactory.ha.heartbeat.recently.worked.trigger.days                 | 7
+   artifactory.binary.store.error.notification.intervalSecs              | 30
+   artifactory.binary.store.error.notification.staleSecs                 | 30
+   artifactory.ha.membersIntroduction.intervalSecs                       | 30
+   artifactory.ha.membersIntroduction.staleSecs                          | 30
+   artifactory.npm.index.quietPeriodSecs                                 | 60
+   artifactory.npm.index.cycleSecs                                       | 60
+   artifactory.import.max.parallelRepos                                  | 1
+   artifactory.debian.distribution.path                                  | dists
+   artifactory.opkg.index.quietPeriodSecs                                | 60
+   artifactory.opkg.index.cycleSecs                                      | 2
+   artifactory.debian.default.architectures                              | i386,amd64
+   artifactory.pypi.index.quietPeriodSecs                                | 60
+   artifactory.pypi.index.sleepMilliSecs                                 | 60
+   artifactory.docker.cleanup.maxAgeMillis                               | 86400000
+   artifactory.docker.tags.cleanup.intervalSecs                          | 300
+   artifactory.docker.tags.cleanup.quietPeriodSecs                       | 60
+   artifactory.http.range.support                                        | true
+   artifactory.acl.dirty.read.timeout                                    | 20000
+   artifactory.central.config.dirty.read.timeout.millis                  | 2000
+   artifactory.repositories.dirty.read.timeout.millis                    | 5000
+   artifactory.ping.allowUnauthenticated                                 | false
+   artifactory.repo.http.idleConnectionMonitorInterval                   | 10
+   artifactory.repo.http.disableIdleConnectionMonitoring                 | false
+   artifactory.support.core.bundle.contentCollectionAwaitTimeout         | 60
+   artifactory.support.core.bundle.waitForSlotBeforeWithdraw             | 600
+   artifactory.support.core.bundle.maxBundles                            | 5
+   artifactory.binary.provider.zones                                     | a,b,c
+   artifactory.binary.provider.prune.chunk.size                          | 500
+   artifactory.properties.search.chunk.size                              | 500
+   artifactory.security.useFrontCacheForBlockedUsers                     | true
+   artifactory.security.loginBlockDelay                                  | 500
+   artifactory.security.password.expiry.passwordExpireNotificationJobIntervalSecs| *****
+   artifactory.security.password.expiry.passwordExpireJobIntervalSecs    | *****
+   artifactory.security.password.expiry.daysToNotifyBefore               | *
+   artifactory.http.client.max.total.connections                         | 50
+   artifactory.http.client.max.connections.per.route                     | 50
+   artifactory.hazelcast.max.lock.lease.time.minutes                     | 30
+   artifactory.repo.remote.blockedMismatchingMimeTypes                   | text/html,application/xhtml+xml
+   artifactory.mvn.metadata.calculation.skip.delete.event                | false
+   artifactory.repo.remote.browsing.content.length.limit.KB              | 1024
+   artifactory.hazelcast.management                                      | false
+   artifactory.sumologic.api.url                                         | https://auth.sumologic.com
+   artifactory.move.copy.max.folder.cache.size                           | 1000000
+   artifactory.move.copy.default.transaction.size                        | 1000
+   artifactory.node.properties.replace.all                               | false
+   artifactory.node.properties.log.performance                           | false
+   artifactory.workQueue.execution.syncExecutionTimeoutMillis            | 120000
+   artifactory.workitem.max.lock.lease.time.minutes                      | 30
+   artifactory.security.communication.constant                           | ArtifactorySecurityCommunicationConstant
+   artifactory.nuget.disablePermissionCheck                              | false
+   artifactory.treebrowser.sortRepositories.sortByType                   | virtual,distribution,local,remote
+   artifactory.maven.metadata.publishModelVersion                        | true
+   artifactory.access.token.expiresIn.default                            | 3600
+   artifactory.puppet.metadata.calculation.workers                       | 5
+   artifactory.puppet.reindex.period                                     | 1800
+   artifactory.puppet.additional.modulegroup                             | 
+   artifactory.puppet.additional.endorsement                             | 
+   artifactory.onboarding.skipWizard                                     | false
+   artifactory.configuration.manager.retry.amount                        | 3
+   artifactory.aggregation.time.window.secs                              | 60
+   artifactory.most.downloaded.cache.idleTimeSecs                        | 900
+   artifactory.home                                                      | /home/vagrant/artifactory-oss-5.3.0
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 52.0
+   java.home                                                             | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre
+   java.io.tmpdir                                                        | /home/vagrant/artifactory-oss-5.3.0/tomcat/temp
+   java.runtime.name                                                     | OpenJDK Runtime Environment
+   java.runtime.version                                                  | 1.8.0_131-b11
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.8
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http://java.oracle.com/
+   java.vendor.url.bug                                                   | http://bugreport.sun.com/bugreport/
+   java.version                                                          | 1.8.0_131
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | OpenJDK 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.8
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 25.131-b11
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | UTF-8
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/home/vagrant/artifactory-oss-5.3.0/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Djdk.tls.ephemeralDHKeySize=****
+                                                                         | -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX:+UseG1GC
+                                                                         | -XX:OnOutOfMemoryError=kill -9 %p
+                                                                         | -Djruby.compile.invokedynamic=false
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Dartdist=zip
+                                                                         | -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true
+                                                                         | -Djava.security.egd=file:/dev/./urandom
+                                                                         | -Dartifactory.home=/home/vagrant/artifactory-oss-5.3.0
+                                                                         | -Djava.endorsed.dirs=/home/vagrant/artifactory-oss-5.3.0/tomcat/endorsed
+                                                                         | -Dcatalina.base=/home/vagrant/artifactory-oss-5.3.0/tomcat
+                                                                         | -Dcatalina.home=/home/vagrant/artifactory-oss-5.3.0/tomcat
+                                                                         | -Djava.io.tmpdir=/home/vagrant/artifactory-oss-5.3.0/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+   java.endorsed.dirs                                                    | /home/vagrant/artifactory-oss-5.3.0/tomcat/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+   java.class.path                                                       | /home/vagrant/artifactory-oss-5.3.0/tomcat/bin/bootstrap.jar
+                                                                         | /home/vagrant/artifactory-oss-5.3.0/tomcat/bin/tomcat-juli.jar
+
+2017-05-25 07:24:43,857 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:378) - Replacing temporary DB channel with permanent DB channel
+2017-05-25 07:24:43,861 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:381) - Successfully closed temporary DB channel
+2017-05-25 07:24:43,862 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to READY by refresh
+2017-05-25 07:24:43,863 [art-init] [INFO ] (o.a.c.ConvertersManagerImpl:206) - Sending configuration update message to slaves
+2017-05-25 07:24:43,885 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:215) - 
+###########################################################
+### Artifactory successfully started (15.536 seconds)   ###
+###########################################################
+
+2017-05-25 08:00:00,243 [art-exec-3] [INFO ] (o.a.r.s.t.p.TrashcanPruner:92) - Trashcan pruning total execution time: '203 millis'
+2017-05-25 08:00:00,282 [art-exec-3] [INFO ] (o.a.s.b.s.GarbageCollectorInfo:80) - Storage garbage collector report:
+Number of binaries:      2
+Total execution time:    29 millis
+Candidates for deletion: 0
+Checksums deleted:       0
+Binaries deleted:        0
+Total size freed:        0 bytes
+Current total size:      2.39 MB
+2017-05-25 08:53:36,014 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to NOT READY by destroy
+2017-05-25 08:53:36,020 [Thread-5] [INFO ] (o.a.c.c.w.FileWatchingManager:107) - Watch service ended on destroy
+2017-05-25 08:53:36,021 [Thread-5] [INFO ] (o.a.c.c.w.FileWatchingManager:113) - End watch of folder configurations
+2017-05-25 08:53:37,029 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:307) - Destroying 38 Artifactory Spring Beans
+2017-05-25 08:53:37,032 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Backup from task service handler.
+2017-05-25 08:53:37,034 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Garbage Collector from task service handler.
+2017-05-25 08:53:37,035 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Indexer from task service handler.
+2017-05-25 08:53:37,038 [localhost-startStop-2] [INFO ] (o.a.s.BaseTaskServiceDescriptorHandler:43) - Removing all job Artifact Cleanup from task service handler.
+2017-05-25 08:53:37,063 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactoryApplicationContext:325) - Closing Artifactory: startup date [Thu May 25 07:24:28 UTC 2017]; root of context hierarchy
+2017-05-25 08:53:37,080 [localhost-startStop-2] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:765) - Shutting down Quartz Scheduler
+2017-05-25 08:53:37,109 [localhost-startStop-2] [INFO ] (o.j.a.s.AccessApplicationContext:862) - Closing org.jfrog.access.server.AccessApplicationContext@14a5e962: startup date [Thu May 25 07:24:26 UTC 2017]; root of context hierarchy
+2017-05-25 09:52:30,549 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessApplicationContext:23) - Refreshing org.jfrog.access.server.AccessApplicationContext@702fde92: startup date [Thu May 25 09:52:30 UTC 2017]; root of context hierarchy
+2017-05-25 09:52:31,260 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelper:72) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2017-05-25 09:52:31,262 [localhost-startStop-1] [INFO ] (o.j.a.s.d.u.AccessJdbcHelper:74) - Connection URL: jdbc:derby:/home/vagrant/artifactory-oss-5.3.0/data/derby
+2017-05-25 09:52:31,796 [localhost-startStop-1] [INFO ] (o.j.a.s.s.TokenServiceImpl:72) - Scheduling task for revoking expired tokens using cron expression: 0 0 0/1 * * ?
+2017-05-25 09:52:32,087 [localhost-startStop-1] [INFO ] (o.j.a.s.AccessServerBootstrap:171) - [ACCESS BOOTSTRAP] Updating server '723bdb83-8964-4278-b148-7f53757515d7' private key finger print to: 53e1ab03c8ba17a9f6209515e2401dc31c3b8936a3865231f802fb70db3d0286
+2017-05-25 09:52:32,398 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:269) - 
+                _   _  __           _                      ____   _____ _____
+     /\        | | (_)/ _|         | |                    / __ \ / ____/ ____|
+    /  \   _ __| |_ _| |_ __ _  ___| |_ ___  _ __ _   _  | |  | | (___| (___
+   / /\ \ | '__| __| |  _/ _` |/ __| __/ _ \| '__| | | | | |  | |\___ \\___ \
+  / ____ \| |  | |_| | || (_| | (__| || (_) | |  | |_| | | |__| |____) |___) |
+ /_/    \_\_|   \__|_|_| \__,_|\___|\__\___/|_|   \__, |  \____/|_____/_____/
+ Version:  5.3.0                                   __/ |
+ Revision: 50045                                  |___/
+ Artifactory Home: '/home/vagrant/artifactory-oss-5.3.0'
+
+2017-05-25 09:52:32,539 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to NOT READY by refresh
+2017-05-25 09:52:32,540 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:213) - Refreshing Artifactory: startup date [Thu May 25 09:52:32 UTC 2017]; root of context hierarchy
+2017-05-25 09:52:38,525 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:191) - Database: Apache Derby 10.11.1.1 - (1616546). Driver: Apache Derby Embedded JDBC Driver 10.11.1.1 - (1616546)
+2017-05-25 09:52:38,525 [art-init] [INFO ] (o.a.s.d.DbServiceImpl:193) - Connection URL: jdbc:derby:/home/vagrant/artifactory-oss-5.3.0/data/derby
+2017-05-25 09:52:40,845 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'blob' from jar:file:/home/vagrant/artifactory-oss-5.3.0/tomcat/webapps/artifactory/WEB-INF/lib/artifactory-storage-db-5.3.0.jar!/
+2017-05-25 09:52:40,870 [art-init] [INFO ] (o.j.s.b.p.t.BinaryProviderClassScanner:76) - Added 'empty, external-file, external-wrapper, file-system, cache-fs, retry' from jar:file:/home/vagrant/artifactory-oss-5.3.0/tomcat/webapps/artifactory/WEB-INF/lib/binary-store-core-2.0.12.jar!/
+2017-05-25 09:52:44,630 [art-init] [INFO ] (o.a.s.ArtifactorySchedulerFactoryBean:647) - Starting Quartz Scheduler now
+2017-05-25 09:52:44,766 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:220) - Artifactory context starting up 38 Spring Beans...
+2017-05-25 09:52:46,780 [art-init] [INFO ] (o.a.i.InfoWriter    :87) - 
+
+ SYSTEM INFORMATION DUMP
+ =======================
+
+ User Info
+ ========================
+   user.country                                                          | US
+   user.dir                                                              | /home/vagrant
+   user.home                                                             | /root
+   user.language                                                         | en
+   user.name                                                             | root
+   user.timezone                                                         | UTC
+
+ Host Info
+ ========================
+   Available Processors                                                  | 2
+   Heap Memory Usage-Commited                                            | 536870912
+   Heap Memory Usage-Init                                                | 536870912
+   Heap Memory Usage-Max                                                 | 2147483648
+   Heap Memory Usage-Used                                                | 143130648
+   Non-Heap Memory Usage-Commited                                        | 88694784
+   Non-Heap Memory Usage-Init                                            | 2555904
+   Non-Heap Memory Usage-Max                                             | -1
+   Non-Heap Memory Usage-Used                                            | 85998504
+   os.arch                                                               | amd64
+   os.name                                                               | Linux
+   os.version                                                            | 3.10.0-514.16.1.el7.x86_64
+
+ Artifactory Info
+ ========================
+   artifactory.runMode.test                                              | false
+   artifactory.runMode.qa                                                | false
+   artifactory.runMode.dev                                               | false
+   artifactory.runMode.devHa                                             | false
+   artifactory.version                                                   | 5.3.0
+   artifactory.revision                                                  | 50045
+   artifactory.timestamp                                                 | 1494329569467
+   artifactory.servlet.supportUrlSessionTracking                         | false
+   artifactory.addons.disabled                                           | 
+   artifactory.addons.info.url                                           | http://service.jfrog.org/artifactory/addons/info/%s
+   artifactory.addons.info.url                                           | http://www.jfrog.com/confluence/display/RTF/%s
+   artifactory.async.corePoolSize                                        | 8
+   artifactory.async.poolTtlSecs                                         | 60
+   artifactory.async.poolMaxQueueSize                                    | 10000
+   artifactory.versioningQueryIntervalSecs                               | 7200
+   artifactory.logs.viewRefreshRateSecs                                  | 10
+   artifactory.locks.timeoutSecs                                         | 120
+   artifactory.locks.debugTimeouts                                       | false
+   artifactory.task.completionLockTimeoutRetries                         | 100
+   artifactory.repo.concurrentDownloadSyncTimeoutSecs                    | 900
+   artifactory.repo.downloadStatsEnabled                                 | true
+   artifactory.repo.global.disabled                                      | true
+   artifactory.fsitem.cache.idleTimeSecs                                 | 1200
+   artifactory.docker.tokens.cache.idleTimeSecs                          | 240
+   artifactory.artifactory.tokens.cache.idleTimeSecs                     | 300
+   artifactory.cacheFS.sync.quietPeriodSecs                              | 900
+   artifactory.search.maxResults                                         | 500
+   artifactory.search.userQueryLimit                                     | 1000
+   artifactory.search.content.maxFragments                               | 500
+   artifactory.search.content.maxFragmentsSize                           | 5000
+   artifactory.search.archive.minQueryLength                             | 3
+   artifactory.search.pattern.timeoutSecs                                | 30
+   artifactory.gc.useIndex                                               | false
+   artifactory.gc.intervalSecs                                           | 86400
+   artifactory.gc.delaySecs                                              | 7200
+   artifactory.gc.sleepBetweenNodesMillis                                | 20
+   artifactory.gc.scanStartSleepingThresholdMillis                       | 20000
+   artifactory.gc.scanSleepBetweenIterationsMillis                       | 200
+   artifactory.gc.fileScanSleepIterationMillis                           | 1000
+   artifactory.gc.fileScanSleepMillis                                    | 250
+   artifactory.gc.maxCacheEntries                                        | 10000
+   artifactory.gc.readersMaxTimeSecs                                     | 10800
+   artifactory.gc.failCount.threshold                                    | 3
+   artifactory.traffic.collectionActive                                  | false
+   artifactory.security.authentication.cache.initSize                    | 100
+   artifactory.security.authentication.cache.idleTimeSecs                | 300
+   artifactory.security.userLastAccessUpdatesResolutionSecs              | 5
+   artifactory.security.master.key                                       | ************************
+   artifactory.security.master.key.numOfFallbackKeys                     | *
+   artifactory.security.disableRememberMe                                | false
+   artifactory.security.ldap.forceGroupMemberAttFullDN                   | false
+   artifactory.security.ldap.disable.group.search.attributes.limitation  | false
+   artifactory.security.ldap.group.search.filterThreshold                | 0
+   artifactory.enable.aql.read.committed                                 | false
+   artifactory.mvn.central.hostPattern                                   | .maven.org
+   artifactory.mvn.central.indexerMaxQueryIntervalSecs                   | 86400
+   artifactory.mvn.metadata.plugin.calculation.workers                   | 2
+   artifactory.mvn.metadata.calculation.workers                          | 8
+   artifactory.mvn.dynamicMetadata.cacheRetentionSecs                    | 10
+   artifactory.mvn.metadata.version3.enabled                             | true
+   artifactory.mvn.custom.types                                          | tar.gz,tar.bz2
+   artifactory.request.disableVersionTokens                              | false
+   artifactory.request.searchLatestReleaseByDateCreated                  | false
+   artifactory.npm.tag.tagLatestByPublish                                | false
+   artifactory.build.maxFoldersToScanForDeletionWarnings                 | 2
+   artifactory.build.checksum.cache.idleTimeSecs                         | 300
+   artifactory.updates.refreshIntervalSecs                               | 14400
+   artifactory.updates.url                                               | http://service.jfrog.org/artifactory/updates
+   artifactory.artifactoryRequestsToGlobalCanRetrieveRemoteArtifacts     | false
+   artifactory.ui.syntaxColoringMaxTextSizeBytes                         | 512000
+   artifactory.plugin.scripts.refreshIntervalSecs                        | 0
+   artifactory.plugin.aol.support                                        | false
+   artifactory.aol.dedicated.server                                      | false
+   artifactory.aol.displayAccountManagementLink                          | true
+   artifactory.aol.security.http.sso.enable                              | false
+   artifactory.file.roller.maxFileToRetain                               | 10
+   artifactory.backup.fileExportSleepIterationMillis                     | 2000
+   artifactory.backup.fileExportSleepMillis                              | 250
+   artifactory.http.acceptEncoding.gzip                                  | true
+   artifactory.http.useExpectContinue                                    | false
+   artifactory.http.forceForbiddenResponse                               | false
+   artifactory.http.connectionPool.timeToLive                            | 30
+   artifactory.http.enableCookieManagement                               | false
+   artifactory.filtering.resourceSizeKb                                  | 64
+   artifactory.repo.remote.checkForExistingResourceOnRequest             | true
+   artifactory.version.query.enabled                                     | true
+   artifactory.response.disableContentDispositionFilename                | false
+   artifactory.composer.metadata.extractor.workers                       | 20
+   artifactory.composer.metadata.index.workers                           | 10
+   artifactory.chef.metadata.index.workers                               | 10
+   artifactory.yum.virtual.metadata.calculation.workers                  | 5
+   artifactory.yum.calculationRequest.aggregationTimeWindowSecs          | 60
+   artifactory.yum.calculationRequest.aggregationCycleSecs               | 60
+   artifactory.debian.metadata.calculation.workers                       | 8
+   artifactory.debian.remote.etag                                        | true
+   artifactory.debian.metadata.validation                                | true
+   artifactory.archive.licenseFile.names                                 | license,LICENSE,license.txt,LICENSE.txt,LICENSE.TXT
+   artifactory.ui.search.maxRowsPerPage                                  | 20
+   artifactory.replication.checksumDeploy.minSizeKb                      | 10
+   artifactory.replication.consumer.queueSize                            | 1
+   artifactory.replication.local.iteration.sleepThresholdMillis          | 1000
+   artifactory.replication.local.iteration.sleepMillis                   | 100
+   artifactory.replication.event.queue.size                              | 50000
+   artifactory.replication.properties.max.length                         | 100000
+   artifactory.replication.statistics.max.length                         | 5000
+   artifactory.request.explodedArchiveExtensions                         | zip,tar,tar.gz,tgz
+   artifactory.bintray.jcenter.url                                       | http://jcenter.bintray.com
+   artifactory.bintray.url                                               | https://bintray.com
+   artifactory.bintray.api.url                                           | https://api.bintray.com
+   artifactory.bintray.token.expirySecs                                  | 3600
+   artifactory.bintray.distributionRegex.timeoutMillis                   | 180000
+   artifactory.bintray.ui.hideUploads                                    | false
+   artifactory.bintray.ui.hideInfo                                       | false
+   artifactory.bintray.ui.hideRemoteSearch                               | false
+   artifactory.bintray.client.threadPool.size                            | 5
+   artifactory.enable.ui.pages.in.Iframe                                 | false
+   artifactory.bintray.client.requestTimeoutMS                           | 150000
+   artifactory.bintray.client.distribution.requestTimeoutMS              | 30000
+   artifactory.bintray.client.signRequestTimeoutMS                       | 45000
+   artifactory.useUserNameAutoCompleteOnLogin                            | on
+   artifactory.ui.hideEncryptedPassword                                  | *****
+   artifactory.stats.flushIntervalSecs                                   | 30
+   artifactory.stats.remote.flushIntervalSecs                            | 35
+   artifactory.stats.flushTimeoutSecs                                    | 120
+   artifactory.integrationCleanup.intervalSecs                           | 300
+   artifactory.integrationCleanup.quietPeriodSecs                        | 60
+   artifactory.folderPruning.intervalSecs                                | 300
+   artifactory.folderPruning.quietPeriodSecs                             | 60
+   artifactory.repo.virtualCacheCleanup.maxAgeHours                      | 168
+   artifactory.repo.virtualCacheCleanup.pattern                          | *.pom
+   artifactory.security.authentication.password.salt                     | ****************
+   artifactory.db.idGenerator.fetch.amount                               | 2000
+   artifactory.db.idGenerator.max.update.retries                         | 50
+   artifactory.gems.localIndexTaskIntervalSecs                           | 30
+   artifactory.gems.virtualIndexTaskIntervalSecs                         | 300
+   artifactory.gems.gemsIndexTaskQueueLimit                              | 20000
+   artifactory.gems.gemsAfterRepoInitHack                                | true
+   artifactory.security.authentication.crowd.group.startIndex            | 0
+   artifactory.security.authentication.crowd.group.maxResults            | 9999
+   artifactory.ui.hideChecksums                                          | false
+   artifactory.archive.indexer.intervalSecs                              | 60
+   artifactory.xray.indexer.intervalSecs                                 | 60
+   artifactory.xray.force.reindex                                        | false
+   artifactory.xray.scanBuild.httpClient.max.connections                 | 30
+   artifactory.nuget.inMemoryRemoteCaches                                | true
+   artifactory.nuget.forceAuthentication                                 | false
+   artifactory.nuget.allowRootGetWithAnon                                | false
+   artifactory.ha.heartbeat.intervalSecs                                 | 5
+   artifactory.ha.heartbeat.staleSecs                                    | 30
+   artifactory.ha.heartbeat.recently.worked.trigger.days                 | 7
+   artifactory.binary.store.error.notification.intervalSecs              | 30
+   artifactory.binary.store.error.notification.staleSecs                 | 30
+   artifactory.ha.membersIntroduction.intervalSecs                       | 30
+   artifactory.ha.membersIntroduction.staleSecs                          | 30
+   artifactory.npm.index.quietPeriodSecs                                 | 60
+   artifactory.npm.index.cycleSecs                                       | 60
+   artifactory.import.max.parallelRepos                                  | 1
+   artifactory.debian.distribution.path                                  | dists
+   artifactory.opkg.index.quietPeriodSecs                                | 60
+   artifactory.opkg.index.cycleSecs                                      | 2
+   artifactory.debian.default.architectures                              | i386,amd64
+   artifactory.pypi.index.quietPeriodSecs                                | 60
+   artifactory.pypi.index.sleepMilliSecs                                 | 60
+   artifactory.docker.cleanup.maxAgeMillis                               | 86400000
+   artifactory.docker.tags.cleanup.intervalSecs                          | 300
+   artifactory.docker.tags.cleanup.quietPeriodSecs                       | 60
+   artifactory.http.range.support                                        | true
+   artifactory.acl.dirty.read.timeout                                    | 20000
+   artifactory.central.config.dirty.read.timeout.millis                  | 2000
+   artifactory.repositories.dirty.read.timeout.millis                    | 5000
+   artifactory.ping.allowUnauthenticated                                 | false
+   artifactory.repo.http.idleConnectionMonitorInterval                   | 10
+   artifactory.repo.http.disableIdleConnectionMonitoring                 | false
+   artifactory.support.core.bundle.contentCollectionAwaitTimeout         | 60
+   artifactory.support.core.bundle.waitForSlotBeforeWithdraw             | 600
+   artifactory.support.core.bundle.maxBundles                            | 5
+   artifactory.binary.provider.zones                                     | a,b,c
+   artifactory.binary.provider.prune.chunk.size                          | 500
+   artifactory.properties.search.chunk.size                              | 500
+   artifactory.security.useFrontCacheForBlockedUsers                     | true
+   artifactory.security.loginBlockDelay                                  | 500
+   artifactory.security.password.expiry.passwordExpireNotificationJobIntervalSecs| *****
+   artifactory.security.password.expiry.passwordExpireJobIntervalSecs    | *****
+   artifactory.security.password.expiry.daysToNotifyBefore               | *
+   artifactory.http.client.max.total.connections                         | 50
+   artifactory.http.client.max.connections.per.route                     | 50
+   artifactory.hazelcast.max.lock.lease.time.minutes                     | 30
+   artifactory.repo.remote.blockedMismatchingMimeTypes                   | text/html,application/xhtml+xml
+   artifactory.mvn.metadata.calculation.skip.delete.event                | false
+   artifactory.repo.remote.browsing.content.length.limit.KB              | 1024
+   artifactory.hazelcast.management                                      | false
+   artifactory.sumologic.api.url                                         | https://auth.sumologic.com
+   artifactory.move.copy.max.folder.cache.size                           | 1000000
+   artifactory.move.copy.default.transaction.size                        | 1000
+   artifactory.node.properties.replace.all                               | false
+   artifactory.node.properties.log.performance                           | false
+   artifactory.workQueue.execution.syncExecutionTimeoutMillis            | 120000
+   artifactory.workitem.max.lock.lease.time.minutes                      | 30
+   artifactory.security.communication.constant                           | ArtifactorySecurityCommunicationConstant
+   artifactory.nuget.disablePermissionCheck                              | false
+   artifactory.treebrowser.sortRepositories.sortByType                   | virtual,distribution,local,remote
+   artifactory.maven.metadata.publishModelVersion                        | true
+   artifactory.access.token.expiresIn.default                            | 3600
+   artifactory.puppet.metadata.calculation.workers                       | 5
+   artifactory.puppet.reindex.period                                     | 1800
+   artifactory.puppet.additional.modulegroup                             | 
+   artifactory.puppet.additional.endorsement                             | 
+   artifactory.onboarding.skipWizard                                     | false
+   artifactory.configuration.manager.retry.amount                        | 3
+   artifactory.aggregation.time.window.secs                              | 60
+   artifactory.most.downloaded.cache.idleTimeSecs                        | 900
+   artifactory.home                                                      | /home/vagrant/artifactory-oss-5.3.0
+
+ Java System Info
+ ========================
+   java.class.version                                                    | 52.0
+   java.home                                                             | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre
+   java.io.tmpdir                                                        | /home/vagrant/artifactory-oss-5.3.0/tomcat/temp
+   java.runtime.name                                                     | OpenJDK Runtime Environment
+   java.runtime.version                                                  | 1.8.0_131-b11
+   java.specification.name                                               | Java Platform API Specification
+   java.specification.vendor                                             | Oracle Corporation
+   java.specification.version                                            | 1.8
+   java.vendor                                                           | Oracle Corporation
+   java.vendor.url                                                       | http://java.oracle.com/
+   java.vendor.url.bug                                                   | http://bugreport.sun.com/bugreport/
+   java.version                                                          | 1.8.0_131
+   java.vm.info                                                          | mixed mode
+   java.vm.name                                                          | OpenJDK 64-Bit Server VM
+   java.vm.specification.name                                            | Java Virtual Machine Specification
+   java.vm.specification.vendor                                          | Oracle Corporation
+   java.vm.specification.version                                         | 1.8
+   java.vm.vendor                                                        | Oracle Corporation
+   java.vm.version                                                       | 25.131-b11
+   sun.arch.data.model                                                   | 64
+   sun.boot.library.path                                                 | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/amd64
+   sun.cpu.endian                                                        | little
+   sun.cpu.isalist                                                       | 
+   sun.io.unicode.encoding                                               | UnicodeLittle
+   sun.java.launcher                                                     | SUN_STANDARD
+   sun.jnu.encoding                                                      | UTF-8
+   sun.management.compiler                                               | HotSpot 64-Bit Tiered Compilers
+   sun.os.patch.level                                                    | unknown
+   JVM Input arguments                                                   | -Djava.util.logging.config.file=/home/vagrant/artifactory-oss-5.3.0/tomcat/conf/logging.properties
+                                                                         | -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                                                                         | -Djdk.tls.ephemeralDHKeySize=****
+                                                                         | -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+                                                                         | -Xms512m
+                                                                         | -Xmx2g
+                                                                         | -Xss256k
+                                                                         | -XX:+UseG1GC
+                                                                         | -XX:OnOutOfMemoryError=kill -9 %p
+                                                                         | -Djruby.compile.invokedynamic=false
+                                                                         | -Dfile.encoding=UTF8
+                                                                         | -Dartdist=zip
+                                                                         | -Dorg.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH=true
+                                                                         | -Djava.security.egd=file:/dev/./urandom
+                                                                         | -Dartifactory.home=/home/vagrant/artifactory-oss-5.3.0
+                                                                         | -Djava.endorsed.dirs=/home/vagrant/artifactory-oss-5.3.0/tomcat/endorsed
+                                                                         | -Dcatalina.base=/home/vagrant/artifactory-oss-5.3.0/tomcat
+                                                                         | -Dcatalina.home=/home/vagrant/artifactory-oss-5.3.0/tomcat
+                                                                         | -Djava.io.tmpdir=/home/vagrant/artifactory-oss-5.3.0/tomcat/temp
+
+ Java Class Path Info
+ ========================
+   sun.boot.class.path                                                   | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/resources.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/rt.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/sunrsasign.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jsse.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jce.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/charsets.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jfr.jar
+                                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/classes
+   java.library.path                                                     | /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+   java.endorsed.dirs                                                    | /home/vagrant/artifactory-oss-5.3.0/tomcat/endorsed
+   java.ext.dirs                                                         | /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+   java.class.path                                                       | /home/vagrant/artifactory-oss-5.3.0/tomcat/bin/bootstrap.jar
+                                                                         | /home/vagrant/artifactory-oss-5.3.0/tomcat/bin/tomcat-juli.jar
+
+2017-05-25 09:52:47,173 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:378) - Replacing temporary DB channel with permanent DB channel
+2017-05-25 09:52:47,175 [art-init] [INFO ] (o.a.c.c.ConfigurationManagerImpl:381) - Successfully closed temporary DB channel
+2017-05-25 09:52:47,176 [art-init] [INFO ] (o.a.s.ArtifactoryApplicationContext:433) - Artifactory application context set to READY by refresh
+2017-05-25 09:52:47,176 [art-init] [INFO ] (o.a.c.ConvertersManagerImpl:206) - Sending configuration update message to slaves
+2017-05-25 09:52:47,234 [art-init] [INFO ] (o.a.w.s.ArtifactoryContextConfigListener:215) - 
+###########################################################
+### Artifactory successfully started (14.890 seconds)   ###
+###########################################################
+
+2017-05-25 11:07:53,483 [http-nio-8081-exec-10] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251994
+2017-05-25 11:56:07,480 [http-nio-8081-exec-6] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251994
+2017-05-25 12:00:00,093 [art-exec-8] [INFO ] (o.a.r.s.t.p.TrashcanPruner:92) - Trashcan pruning total execution time: '85 millis'
+2017-05-25 12:00:00,132 [art-exec-8] [INFO ] (o.a.s.b.s.GarbageCollectorInfo:80) - Storage garbage collector report:
+Number of binaries:      2
+Total execution time:    32 millis
+Candidates for deletion: 0
+Checksums deleted:       0
+Binaries deleted:        0
+Total size freed:        0 bytes
+Current total size:      2.39 MB
+2017-05-25 12:02:39,510 [http-nio-8081-exec-5] [INFO ] (o.a.e.UploadServiceImpl:516) - Deploy to 'ctc:LoginWebApp.war' Content-Length: 1251994

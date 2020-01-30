@@ -1,0 +1,15 @@
+[nginx]
+35.231.186.59
+#10.211.2.2 
+[test]
+35.227.109.190 
+[test:vars]
+############## Username ######################
+ansible_ssh_user=sravanam1242.cloud
+############## SSH Key #######################
+ansible_ssh_private_key_file=~/.ssh/gcp_rs
+[nginx:vars]
+############## Username ######################
+ansible_ssh_user=sravanam1242.cloud
+############## SSH Key #######################
+ansible_ssh_private_key_file=~/.ssh/gcp_rs

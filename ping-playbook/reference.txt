@@ -1,0 +1,6 @@
+n Hosts/Inventory files username@ipaddress
+changes in control and target machines:
+1. set password for the login account(If do not have)
+2. /etc/ssh/ssh_config and sshd_config(control machine) --> update PasswordAuthentication yes
+3. sudo service sshd restart
+4. yum update -y

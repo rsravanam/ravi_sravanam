@@ -1,0 +1,11 @@
+---
+- name: Install zabbix agent with script
+  copy: src=zabbix-agent-initscript.sh dest=/etc/zabbix mode=0755
+  
+- name: Configure Tomcat users
+  template: src=zabbix_agentd.conf dest=/etc/zabbix/
+  notify: restart agent
+
+- name: Start agent
+  service: name=zabbix-agent state=started enabled=yes  
+  notify: restart firewalld

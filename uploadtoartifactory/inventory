@@ -1,0 +1,13 @@
+[servers]
+10.1.1.21
+10.1.1.22
+10.1.1.23
+
+[jenkins]
+10.1.1.21
+
+[servers:vars]
+ansible_password=vagrant
+
+[jenkins:vars]
+ansible_password=vagrant

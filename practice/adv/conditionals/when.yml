@@ -1,0 +1,38 @@
+---
+- name: test play
+  hosts: all
+  gather_facts: no
+  vars:
+    var1: hello
+  tasks:
+
+      - shell: cat /etc/hosts
+        register: hosts_contents
+        retries: 5
+        tags:
+          - dev
+
+      - shell: echo "motd contains the word hi"
+        #when: hosts_contents.stdout.find('changed') != true
+        tags:
+          - dev
+          - qa
+      - name: list contents of directory
+        command: ls ~/dir
+        register: contents
+        #ignore_errors: no
+        failed_when: "'FAILED' in contents.stdout"
+
+      - name: check contents for emptiness
+        debug: msg="Directory is empty"
+        when: contents.stdout == ""
+
+      - name: var defined
+        shell: echo "var1 value {{ var1 }} defined"
+        #when: var1 is defined
+        changed_when: False
+
+      - name: var not defined
+        fail: msg="var2 is undefined"
+        when: var2 is undefined
+       
