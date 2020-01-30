@@ -18,7 +18,7 @@ def call(Map stageParams) {
     def environment = stageParams.environment
     def buildResult = "${currentBuild.currentResult}"
     def BUILD_USER = getBuildUser()
-    alertBuildStartMessage = "*--- ${status} ---* \n *ENV: * `${environment}`\n *JOB: * `${env.JOB_NAME}`\n *TRIGGERED BY: * `${BUILD_USER}` \n *BUILD NUMBER: * `${env.BUILD_NUMBER}`\n *BUILD URL: * (<${env.BUILD_URL}|Open>)"    
+    alertMessage = "*--- ${status} ---* \n *ENV: * `${environment}`\n *JOB: * `${env.JOB_NAME}`\n *TRIGGERED BY: * `${BUILD_USER}` \n *BUILD NUMBER: * `${env.BUILD_NUMBER}`\n *BUILD URL: * (<${env.BUILD_URL}|Open>)"    
     
     if (buildResult == "SUCCESS") {
         color = "good" 
