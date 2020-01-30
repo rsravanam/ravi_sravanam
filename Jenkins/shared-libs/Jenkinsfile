@@ -1,60 +1,19 @@
-// Test File
+
 
 @Library("shared-libs@master") _
 
-def alertMessage = "*--- BUILD ${currentBuild.currentResult} ---* \n *ENV: * `test` \n *JOB: * `${env.JOB_NAME}`\n *TRIGGERED BY: * `${BUILD_USER}` \n *BUILD NUMBER: * `${env.BUILD_NUMBER}`\n *DURATION:* `${Util.getTimeSpanString(System.currentTimeMillis() - currentBuild.startTimeInMillis)}` \n *BUILD URL: *<${env.BUILD_URL}|${currentBuild.displayName}>"
-def alertBuildStartMessage = "*--- Build STARTED ---* \n *ENV: * `test`\n *JOB: * `${env.JOB_NAME}`\n *TRIGGERED BY: * `${BUILD_USER}` \n *BUILD NUMBER: * `${env.BUILD_NUMBER}`\n *BUILD URL: * (<${env.BUILD_URL}|Open>)"
-def slackChannel = "#jenkins_alerts"
-
+def repo = 'https://github.com/rsravanam/kafka-poc.git'
 pipeline {
-    agent { 
-
-        node {
-            label 'media_slave'            
-        }        
-    }
-
-    stages {
-        
-        stage('Notify Build Triggered'){
-            steps{
-
-                script {
-                    BUILD_USER = getBuildUser()
-                }
-                slackAlert.sendAlert(slackChannel, alertBuildStartMessage)
+    agent none
+    stage ('Example') {
+        steps {
+            // log.info 'Starting' 
+            script { 
+                def z = new org.ravi.Repo()
+                z.checkOutFrom(repo)
+                sh 'ls -l'
+                cleanWs()
             }
-        }
-
-        stage('Stage 1'){
-            steps {
-                sh 'sleep 10'
-            }
-        }
-
-        stage('Stage 2'){
-            steps {
-                sh 'sleep 10'
-            }
-        }
-    }
-
-    post {
-
-        success {
-            slackAlert.sendAlert(slackChannel, alertMessage)
-        }
-        
-        failure {
-            slackAlert.sendAlert(slackChannel, alertMessage)
-        }
-
-        aborted {
-            slackAlert.sendAlert(slackChannel, alertMessage)
-        }
-
-        unstable {
-            slackAlert.sendAlert(slackChannel, alertMessage)
         }
     }
 }
