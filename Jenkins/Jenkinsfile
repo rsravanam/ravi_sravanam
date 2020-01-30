@@ -2,18 +2,16 @@
 
 @Library("shared-libs@master") _
 
-def repo = 'https://github.com/rsravanam/kafka-poc.git'
 pipeline {
-    agent none
-    stage ('Example') {
-        steps {
-            // log.info 'Starting' 
-            script { 
-                def z = new org.ravi.Repo()
-                z.checkOutFrom(repo)
-                sh 'ls -l'
-                cleanWs()
+    agent any
+    stages {
+        stage('Git Checkout') {
+            steps {
+            gitCheckout(
+                branch: "master",
+                url: "https://github.com/rsravanam/python-learn.git"
+            )
             }
-        }
+    }
     }
 }
