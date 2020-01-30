@@ -1,14 +1,17 @@
 
+def sl = load 'jenkins-shared-libs/vars/gitCheckout.groovy'
 pipeline {
     agent any
     stages {
         stage('Git Checkout') {
-            sl = load 'jenkins-shared-libs/vars/gitCheckout.groovy'
             steps {
-            sl.gitCheckout(
-                branch: "master",
-                url: "https://github.com/rsravanam/python-learn.git"
-            )
+                script {
+
+                    sl.gitCheckout(
+                        branch: "master",
+                        url: "https://github.com/rsravanam/python-learn.git"
+                    )
+                }
             }
     }
     }
